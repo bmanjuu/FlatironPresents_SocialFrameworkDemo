@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PDKClient.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //configured the PDK client by linking it with AppID
+    [PDKClient configureSharedInstanceWithAppId:@"4845899245292635740"];
     return YES;
 }
 
