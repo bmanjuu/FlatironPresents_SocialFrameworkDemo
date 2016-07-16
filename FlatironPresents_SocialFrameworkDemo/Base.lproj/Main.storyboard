@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sqK-GK-Xpp">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,46 +17,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-cF-rtR">
-                                <rect key="frame" x="20" y="49" width="560" height="489"/>
-                                <color key="tintColor" red="0.37067730560000001" green="0.7826202552" blue="0.74829819539999998" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybr-Ed-4Af">
-                                <rect key="frame" x="271" y="546" width="59" height="30"/>
-                                <state key="normal" title="Tweet It!"/>
-                                <connections>
-                                    <action selector="tweetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="60U-Z8-9nm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adq-YK-pfc">
-                                <rect key="frame" x="448" y="546" width="39" height="30"/>
-                                <state key="normal" title="Pin It!"/>
-                                <connections>
-                                    <action selector="pinButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OcE-Hr-3P5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-lr-gj1">
-                                <rect key="frame" x="114" y="546" width="71" height="30"/>
-                                <state key="normal" title="Facebook!"/>
-                                <connections>
-                                    <action selector="facebookButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xwg-ms-I1Q"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Np-gu-AAb">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="eIw-GF-cEP">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y9P-lr-gj1">
+                                            <rect key="frame" x="20" y="7" width="71" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Facebook!"/>
+                                            <connections>
+                                                <action selector="facebookButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xwg-ms-I1Q"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="ahU-bp-qkn">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ybr-Ed-4Af">
+                                            <rect key="frame" x="101" y="7" width="59" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Tweet It!"/>
+                                            <connections>
+                                                <action selector="tweetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="60U-Z8-9nm"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="x5x-v0-qvN">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Adq-YK-pfc">
+                                            <rect key="frame" x="170" y="7" width="39" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Pin It!"/>
+                                            <connections>
+                                                <action selector="pinButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OcE-Hr-3P5"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Pp-jV-Cy0">
+                                <rect key="frame" x="0.0" y="64" width="600" height="482"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="482" id="Yie-Um-mc8"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="coolImages" textLabel="oEJ-xI-MWB" style="IBUITableViewCellStyleDefault" id="LWK-NE-zga">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LWK-NE-zga" id="qvf-Dm-CKC">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oEJ-xI-MWB">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Adq-YK-pfc" firstAttribute="baseline" secondItem="ybr-Ed-4Af" secondAttribute="baseline" id="8sj-3e-SwS"/>
-                            <constraint firstItem="aDf-cF-rtR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9hx-kc-l1g"/>
-                            <constraint firstItem="Y9P-lr-gj1" firstAttribute="baseline" secondItem="ybr-Ed-4Af" secondAttribute="baseline" id="BCh-RY-bDq"/>
-                            <constraint firstItem="aDf-cF-rtR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HaR-pB-64i"/>
-                            <constraint firstItem="aDf-cF-rtR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="Kxm-ZW-Msd"/>
-                            <constraint firstItem="ybr-Ed-4Af" firstAttribute="top" secondItem="aDf-cF-rtR" secondAttribute="bottom" constant="8" id="QxN-z9-REQ"/>
-                            <constraint firstItem="aDf-cF-rtR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-6.5" id="nlC-nS-CIw"/>
-                            <constraint firstItem="Adq-YK-pfc" firstAttribute="leading" secondItem="ybr-Ed-4Af" secondAttribute="trailing" constant="118" id="pwJ-Bo-1Ph"/>
-                            <constraint firstItem="ybr-Ed-4Af" firstAttribute="leading" secondItem="Y9P-lr-gj1" secondAttribute="trailing" constant="86" id="rsB-kJ-7nh"/>
-                            <constraint firstItem="ybr-Ed-4Af" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.5" id="xhY-q7-5UJ"/>
+                            <constraint firstItem="8Pp-jV-Cy0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GCB-vV-8Aa"/>
+                            <constraint firstItem="8Pp-jV-Cy0" firstAttribute="leading" secondItem="1Np-gu-AAb" secondAttribute="leading" id="JmX-3n-3ma"/>
+                            <constraint firstAttribute="trailing" secondItem="8Pp-jV-Cy0" secondAttribute="trailing" id="X0k-kE-01q"/>
+                            <constraint firstItem="1Np-gu-AAb" firstAttribute="top" secondItem="8Pp-jV-Cy0" secondAttribute="bottom" constant="10" id="Y7X-Fa-hMj"/>
+                            <constraint firstItem="8Pp-jV-Cy0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hFZ-Sj-25t"/>
+                            <constraint firstItem="8Pp-jV-Cy0" firstAttribute="trailing" secondItem="1Np-gu-AAb" secondAttribute="trailing" id="wXe-Fs-olu"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jgF-PE-Nj4"/>
                     <connections>
                         <outlet property="awesomeImage" destination="aDf-cF-rtR" id="fqv-UY-yDg"/>
                         <outlet property="facebookButton" destination="Y9P-lr-gj1" id="bc9-Tk-MmE"/>
@@ -66,6 +98,48 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1307" y="446"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mcC-rI-lut">
+            <objects>
+                <viewController id="lMc-K5-QQy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6gy-Tx-5HZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="5wL-gR-Ifq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zTK-WF-PJG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-cF-rtR">
+                                <rect key="frame" x="20" y="50" width="560" height="489"/>
+                                <color key="tintColor" red="0.37067730560000001" green="0.7826202552" blue="0.74829819539999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D3R-fz-LjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939" y="436"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GgF-L4-4pe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sqK-GK-Xpp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UlE-ih-x2w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rNB-1U-Sv5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWh-yW-QPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="495" y="446"/>
         </scene>
