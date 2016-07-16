@@ -25,18 +25,21 @@
     //MARK - code for images
     
     //freakshake image
-    NSData *freakshake = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s480x480/e35/13658589_1113138265427131_321430007_n.jpg?ig_cache_key=MTI5MjMwODExNDA2MTc5MzA2Mw%3D%3D.2"]];
-    UIImage *freakShakeImage = [UIImage imageWithData:freakshake];
-    [self.awesomeImage setImage:freakShakeImage];
+//    NSData *freakshake = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s750x750/sh0.08/e35/12918017_215917625457787_361844434_n.jpg?ig_cache_key=MTIzNzU0NDg2OTQ2NDg0NDc3NA%3D%3D.2"]];
+//    UIImage *freakShakeImage = [UIImage imageWithData:freakshake];
+//    [self.awesomeImage setImage:freakShakeImage];
     
     
     //unspirational image
-    NSData *adultingStruggles = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s480x480/e35/13658589_1113138265427131_321430007_n.jpg?ig_cache_key=MTI5MjMwODExNDA2MTc5MzA2Mw%3D%3D.2"]];
-    UIImage *adultingStrugglesImage = [UIImage imageWithData:adultingStruggles];
-    [self.awesomeImage setImage:adultingStrugglesImage];
+//    NSData *adultingStruggles = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s480x480/e35/13658589_1113138265427131_321430007_n.jpg?ig_cache_key=MTI5MjMwODExNDA2MTc5MzA2Mw%3D%3D.2"]];
+//    UIImage *adultingStrugglesImage = [UIImage imageWithData:adultingStruggles];
+//    [self.awesomeImage setImage:adultingStrugglesImage];
     
     
-    //drake gif
+    //pokemon go meme
+    NSData *pokemonGoMeme = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://img.buzzfeed.com/buzzfeed-static/static/2016-07/10/22/asset/buzzfeed-prod-web14/sub-buzz-21306-1468203471-1.png?no-auto"]];
+    UIImage *pokemonGo = [UIImage imageWithData:pokemonGoMeme];
+    [self.awesomeImage setImage:pokemonGo];
     
     
     //scales the picture to fit the screen/view! exciting stuff!! :)
@@ -59,6 +62,6 @@
 //IMAGES USED:
 //freakshake from Patissez (Canberra, Australia): image taken from their instagram account: @"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s750x750/sh0.08/e35/12918017_215917625457787_361844434_n.jpg?ig_cache_key=MTIzNzU0NDg2OTQ2NDg0NDc3NA%3D%3D.2"
 //adulting meme from @unspirational instagram: @"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s480x480/e35/13658589_1113138265427131_321430007_n.jpg?ig_cache_key=MTI5MjMwODExNDA2MTc5MzA2Mw%3D%3D.2"
-//drake throwing pokeball at a pidgey: @"http://i.imgur.com/ohCOFND.gif"
+//pokemongo meme: @"http://i.imgur.com/ohCOFND.gif"
 
 @end
