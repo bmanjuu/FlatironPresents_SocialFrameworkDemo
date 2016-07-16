@@ -78,6 +78,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzI-FV-MLE">
+                                <rect key="frame" x="204" y="38" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -91,7 +94,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="jgF-PE-Nj4"/>
                     <connections>
-                        <outlet property="awesomeImage" destination="aDf-cF-rtR" id="fqv-UY-yDg"/>
                         <outlet property="facebookButton" destination="Y9P-lr-gj1" id="bc9-Tk-MmE"/>
                         <outlet property="pinButton" destination="Adq-YK-pfc" id="Pf9-Qq-een"/>
                         <outlet property="tweetButton" destination="ybr-Ed-4Af" id="EVD-lf-bKC"/>
@@ -100,30 +102,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1307" y="446"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="mcC-rI-lut">
-            <objects>
-                <viewController id="lMc-K5-QQy" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6gy-Tx-5HZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="5wL-gR-Ifq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zTK-WF-PJG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-cF-rtR">
-                                <rect key="frame" x="20" y="50" width="560" height="489"/>
-                                <color key="tintColor" red="0.37067730560000001" green="0.7826202552" blue="0.74829819539999998" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D3R-fz-LjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1939" y="436"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GgF-L4-4pe">

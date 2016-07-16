@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 #import "PDKBoard.h"
+#import <Social/Social.h>
 
 
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *awesomeImage;
 @property (weak, nonatomic) IBOutlet UIButton *tweetButton;
 @property (weak, nonatomic) IBOutlet UIButton *pinButton;
 @property (weak, nonatomic) IBOutlet UIButton *facebookButton;
@@ -49,17 +49,32 @@
     [self.images addObject:pokemonGo];
     
     //scales the picture to fit the screen/view! exciting stuff!! :)
-    self.awesomeImage.contentMode = UIViewContentModeScaleAspectFit;
+    // self.awesomeImage.contentMode = UIViewContentModeScaleAspectFit;
     
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 //MARK - button methods
 - (IBAction)tweetButtonTapped:(id)sender {
-}
-- (IBAction)pinButtonTapped:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        SLComposeViewController *tweetfromApp = [SLComposeViewController
+                                                 composeViewControllerForServiceType:SLServiceTypeTwitter];
+        //        [tweetSheet setInitialText:@"This is our first Tweet from our first Ios app, yaya!!!"];
+        [tweetfromApp addURL:[NSURL URLWithString:@"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s480x480/e35/13658589_1113138265427131_321430007_n.jpg?ig_cache_key=MTI5MjMwODExNDA2MTc5MzA2Mw%3D%3D.2"]];
+        [self presentViewController:tweetfromApp animated:YES completion:nil];
+    }
 }
 - (IBAction)facebookButtonTapped:(id)sender {
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        //        [controller addImage:[UIImage imageNamed:@"socialsharing-facebook-image.jpg"]]
+        [controller addURL:[NSURL URLWithString:@"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s480x480/e35/13658589_1113138265427131_321430007_n.jpg?ig_cache_key=MTI5MjMwODExNDA2MTc5MzA2Mw%3D%3D.2"]];
+        //        [controller setInitialText:@"This is our first facebook Post from our Ios app, yaya!!!"];
+        [self presentViewController:controller animated:YES completion:Nil];
+    }
+}
+- (IBAction)pinButtonTapped:(id)sender {
 }
 
 //MARK - tableview stuff
@@ -71,12 +86,11 @@
     return self.images.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"coolImage" forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%lu", indexPath.row+1]; //change this to image stuff
+    cell.imageView.image = self.images[indexPath.row]; //change this to image stuff
     
     //add self-sizing table view cells stuff here too :)
     

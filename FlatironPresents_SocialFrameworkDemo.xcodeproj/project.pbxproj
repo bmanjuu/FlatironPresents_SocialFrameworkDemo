@@ -14,6 +14,7 @@
 		A4441F191D3A81220080E03B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4441F171D3A81220080E03B /* Main.storyboard */; };
 		A4441F1B1D3A81220080E03B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4441F1A1D3A81220080E03B /* Assets.xcassets */; };
 		A4441F1E1D3A81220080E03B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4441F1C1D3A81220080E03B /* LaunchScreen.storyboard */; };
+		A47FA92C1D3ACCC4001C9ECD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47FA92B1D3ACCC4001C9ECD /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A4441F1A1D3A81220080E03B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4441F1D1D3A81220080E03B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4441F1F1D3A81220080E03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47FA92B1D3ACCC4001C9ECD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47FA92C1D3ACCC4001C9ECD /* Social.framework in Frameworks */,
 				1ED9B5D486AB2CCF93205DFD /* libPods-FlatironPresents_SocialFrameworkDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +50,7 @@
 		4E69F29E385CA861F903EE70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A47FA92B1D3ACCC4001C9ECD /* Social.framework */,
 				87C86271A3180D32A14F7FC0 /* libPods-FlatironPresents_SocialFrameworkDemo.a */,
 			);
 			name = Frameworks;
