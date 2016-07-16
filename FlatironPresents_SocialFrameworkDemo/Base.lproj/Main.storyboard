@@ -25,10 +25,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybr-Ed-4Af">
                                 <rect key="frame" x="202" y="546" width="59" height="30"/>
                                 <state key="normal" title="Tweet It!"/>
+                                <connections>
+                                    <action selector="tweetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="60U-Z8-9nm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adq-YK-pfc">
                                 <rect key="frame" x="356" y="546" width="39" height="30"/>
                                 <state key="normal" title="Pin It!"/>
+                                <connections>
+                                    <action selector="pinButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OcE-Hr-3P5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -43,6 +49,11 @@
                             <constraint firstItem="ybr-Ed-4Af" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-68.5" id="xhY-q7-5UJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="awesomeImage" destination="aDf-cF-rtR" id="fqv-UY-yDg"/>
+                        <outlet property="pinButton" destination="Adq-YK-pfc" id="Pf9-Qq-een"/>
+                        <outlet property="tweetButton" destination="ybr-Ed-4Af" id="EVD-lf-bKC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
