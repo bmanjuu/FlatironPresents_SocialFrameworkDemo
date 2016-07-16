@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *awesomeImage;
 @property (weak, nonatomic) IBOutlet UIButton *tweetButton;
 @property (weak, nonatomic) IBOutlet UIButton *pinButton;
+@property (weak, nonatomic) IBOutlet UIButton *facebookButton;
 
 @end
 
@@ -24,11 +25,22 @@
     //MARK - code for images
     
     //freakshake image
-    NSData *awesomeImageLinkAndData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s480x480/e35/13658589_1113138265427131_321430007_n.jpg?ig_cache_key=MTI5MjMwODExNDA2MTc5MzA2Mw%3D%3D.2"]];
-    UIImage *image = [UIImage imageWithData:awesomeImageLinkAndData];
-    [self.awesomeImage setImage:image];
-    self.awesomeImage.contentMode = UIViewContentModeScaleAspectFit; //scales the picture to fit the screen/view! exciting stuff!! :)
+    NSData *freakshake = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s480x480/e35/13658589_1113138265427131_321430007_n.jpg?ig_cache_key=MTI5MjMwODExNDA2MTc5MzA2Mw%3D%3D.2"]];
+    UIImage *freakShakeImage = [UIImage imageWithData:freakshake];
+    [self.awesomeImage setImage:freakShakeImage];
     
+    
+    //unspirational image
+    NSData *adultingStruggles = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s480x480/e35/13658589_1113138265427131_321430007_n.jpg?ig_cache_key=MTI5MjMwODExNDA2MTc5MzA2Mw%3D%3D.2"]];
+    UIImage *adultingStrugglesImage = [UIImage imageWithData:adultingStruggles];
+    [self.awesomeImage setImage:adultingStrugglesImage];
+    
+    
+    //drake gif
+    
+    
+    //scales the picture to fit the screen/view! exciting stuff!! :)
+    self.awesomeImage.contentMode = UIViewContentModeScaleAspectFit;
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -40,6 +52,8 @@
 - (IBAction)tweetButtonTapped:(id)sender {
 }
 - (IBAction)pinButtonTapped:(id)sender {
+}
+- (IBAction)facebookButtonTapped:(id)sender {
 }
 
 //IMAGES USED:
