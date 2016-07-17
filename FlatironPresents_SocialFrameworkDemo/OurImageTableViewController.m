@@ -41,6 +41,7 @@
     
     OurImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageCell" forIndexPath:indexPath];
     cell.awesomeImageView.image = self.images[indexPath.row]; //change this to image stuff
+    cell.awesomeImageView.contentMode = UIViewContentModeScaleAspectFit;
     
     //add self-sizing table view cells stuff here too :)
     
