@@ -55,12 +55,15 @@
     
     if([segue.identifier isEqualToString: @"freakshake"]){
         freakShakeViewController *freakShakeVC = (freakShakeViewController *)segue.destinationViewController;
-        
+        freakShakeVC.freakShakeImage.image = [UIImage imageNamed:@"freakshake.jpg"];
     }
     else if ([segue.identifier isEqualToString: @"naptimeMeme"]){
-        naptimeMemeViewController *napVC = (naptimeMemeViewController *)segue.destinationViewController; }
+        naptimeMemeViewController *napVC = (naptimeMemeViewController *)segue.destinationViewController;
+        napVC.naptimeMemeImage.image = [UIImage imageNamed:@"naptimeMeme.jpg"];
+    }
     else if ([segue.identifier isEqualToString: @"pokemonGoMeme"]){
         pokemonGoMemeViewController *pokemonVC = (pokemonGoMemeViewController *)segue.destinationViewController;
+        pokemonVC.pokemonGoMemeImage.image = [UIImage imageNamed:@"pokemonGoMeme.png"]; 
     }
     
 //    DetailViewController *detailVC = (DetailViewController *)segue.destinationViewController;

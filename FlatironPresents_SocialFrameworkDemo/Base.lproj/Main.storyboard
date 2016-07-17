@@ -86,6 +86,9 @@
                             <constraint firstItem="V72-K2-0Vk" firstAttribute="trailing" secondItem="HXF-TT-snm" secondAttribute="trailing" id="z1d-eO-q7Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pokemonGoMemeImage" destination="HXF-TT-snm" id="QMv-U5-6WY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xE3-Hr-2kp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,6 +132,9 @@
                             <constraint firstItem="pIC-E6-e8f" firstAttribute="baseline" secondItem="904-8t-A4h" secondAttribute="baseline" constant="30" id="f5c-1m-yLL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="freakShakeImage" destination="904-8t-A4h" id="K3K-Zq-3Ps"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7UV-2b-L4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,6 +176,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="avh-pG-swc" secondAttribute="trailing" constant="71" id="p2D-zU-mIU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="naptimeMemeImage" destination="60l-zZ-5cV" id="xqR-8e-jH1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hL5-ec-TTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

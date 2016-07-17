@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface pokemonGoMemeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *pokemonGoMemeImage;
 
 @end

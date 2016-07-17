@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface naptimeMemeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *naptimeMemeImage;
 
 @end

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface freakShakeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *freakShakeImage;
 
 @end
