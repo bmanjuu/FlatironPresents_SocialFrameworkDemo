@@ -8,7 +8,9 @@
 
 #import "OurImageTableViewController.h"
 #import "OurImageTableViewCell.h"
-#import "DetailViewController.h"
+#import "pokemonGoMemeViewController.h"
+#import "freakShakeViewController.h"
+#import "naptimeMemeViewController.h"
 
 @implementation OurImageTableViewController
 
@@ -50,19 +52,27 @@
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
     
-    //tableviewcell is the sender
+    if([segue.identifier isEqualToString: @"freakshake"]){
+        freakShakeViewController *freakShakeVC = (freakShakeViewController *)segue.destinationViewController;
+        
+    }
+    else if ([segue.identifier isEqualToString: @"naptimeMeme"]){
+        naptimeMemeViewController *napVC = (naptimeMemeViewController *)segue.destinationViewController; }
+    else if ([segue.identifier isEqualToString: @"pokemonGoMeme"]){
+        pokemonGoMemeViewController *pokemonVC = (pokemonGoMemeViewController *)segue.destinationViewController;
+    }
     
-    DetailViewController *detailVC = (DetailViewController *)segue.destinationViewController;
+//    DetailViewController *detailVC = (DetailViewController *)segue.destinationViewController;
+//    
+//    NSIndexPath*selectedIndexPath = [self.tableView indexPathForSelectedRow];
+//    detailVC.selectedImageIndex = selectedIndexPath.row;
+//    
+//    OurImageTableViewCell *selectedCell = (OurImageTableViewCell *)sender;
+//    
+//    detailVC.userSelectedImage.image = self.images[selectedIndexPath.row];
+//    detailVC.selectedImageViewCell = selectedCell;
     
-    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
-    
-    OurImageTableViewCell *selectedCell = (OurImageTableViewCell *)sender;
-    
-    detailVC.userSelectedImage.image = selectedCell.imageView.image;
-    detailVC.selectedImageIndex = selectedIndexPath.row;
 }
 
 

@@ -29,7 +29,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="awesomeImageView" destination="TXj-8p-MDK" id="3ZW-G1-ByQ"/>
-                                    <segue destination="dZu-ZA-qLK" kind="show" id="QZD-LB-ufU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -39,88 +38,142 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="bnz-4F-4bb"/>
+                    <connections>
+                        <segue destination="DwJ-7J-KrF" kind="show" identifier="freakshake" id="ndJ-do-dHX"/>
+                        <segue destination="eye-Rd-OZD" kind="show" identifier="naptimeMeme" id="fjT-61-qeK"/>
+                        <segue destination="ETT-Bu-fds" kind="show" identifier="pokemonGoMeme" id="Y1M-1R-mMu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRy-ho-m9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3311" y="326"/>
         </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="his-DJ-odX">
+        <!--Pokemon Go Meme View Controller-->
+        <scene sceneID="7fU-w9-np6">
             <objects>
-                <viewController id="dZu-ZA-qLK" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController id="ETT-Bu-fds" customClass="pokemonGoMemeViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aMb-lR-I1w"/>
-                        <viewControllerLayoutGuide type="bottom" id="6a6-32-NJN"/>
+                        <viewControllerLayoutGuide type="top" id="kMV-e8-4uj"/>
+                        <viewControllerLayoutGuide type="bottom" id="ALW-cP-40c"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UKx-4m-Jy4">
+                    <view key="view" contentMode="scaleToFill" id="OOM-ud-Xul">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-Hm-Nm5">
-                                <rect key="frame" x="50" y="546" width="71" height="30"/>
-                                <state key="normal" title="Facebook!"/>
-                                <connections>
-                                    <action selector="facebookButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="cvK-Ax-ZmN"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CD-uh-dUe">
+                                <rect key="frame" x="180" y="482" width="67" height="30"/>
+                                <state key="normal" title="Facebook"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1Y-SX-B8f">
-                                <rect key="frame" x="271" y="546" width="59" height="30"/>
-                                <state key="normal" title="Tweet It!"/>
-                                <connections>
-                                    <action selector="tweetButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="hlA-p6-h0b"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V72-K2-0Vk">
+                                <rect key="frame" x="372" y="482" width="48" height="30"/>
+                                <state key="normal" title="Twitter"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u1-c6-pR0">
-                                <rect key="frame" x="511" y="546" width="39" height="30"/>
-                                <state key="normal" title="Pin It!"/>
-                                <connections>
-                                    <action selector="pinButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="YCX-CB-c1L"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Hc-vk-3MU">
-                                <rect key="frame" x="0.0" y="64" width="600" height="472"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="selectedImageCell" id="R4B-4i-dxe" customClass="OurImageTableViewCell">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R4B-4i-dxe" id="e5J-tB-she">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNq-0e-DBm">
-                                                    <rect key="frame" x="180" y="-52" width="240" height="128"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HXF-TT-snm">
+                                <rect key="frame" x="180" y="128" width="240" height="344"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="v6p-Ux-gGC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8Hc-vk-3MU" firstAttribute="top" secondItem="aMb-lR-I1w" secondAttribute="bottom" id="F02-yf-f5N"/>
-                            <constraint firstItem="1u1-c6-pR0" firstAttribute="trailing" secondItem="8Hc-vk-3MU" secondAttribute="trailing" constant="-50" id="KOB-sz-LpF"/>
-                            <constraint firstItem="8Hc-vk-3MU" firstAttribute="width" secondItem="UKx-4m-Jy4" secondAttribute="width" id="MlQ-a8-a9G"/>
-                            <constraint firstItem="1u1-c6-pR0" firstAttribute="baseline" secondItem="8Hc-vk-3MU" secondAttribute="baseline" constant="30" id="Rn4-6d-QJ8"/>
-                            <constraint firstItem="8Hc-vk-3MU" firstAttribute="centerX" secondItem="UKx-4m-Jy4" secondAttribute="centerX" id="aZb-1L-oLK"/>
-                            <constraint firstItem="k1Y-SX-B8f" firstAttribute="baseline" secondItem="8Hc-vk-3MU" secondAttribute="baseline" constant="30" id="ax0-7X-kMe"/>
-                            <constraint firstItem="8Hc-vk-3MU" firstAttribute="centerY" secondItem="UKx-4m-Jy4" secondAttribute="centerY" id="cnF-Pn-gMT"/>
-                            <constraint firstItem="a1R-Hm-Nm5" firstAttribute="leading" secondItem="8Hc-vk-3MU" secondAttribute="leading" constant="50" id="hiS-cO-Wtk"/>
-                            <constraint firstItem="a1R-Hm-Nm5" firstAttribute="baseline" secondItem="8Hc-vk-3MU" secondAttribute="baseline" constant="30" id="o66-s8-XTe"/>
-                            <constraint firstItem="k1Y-SX-B8f" firstAttribute="centerX" secondItem="8Hc-vk-3MU" secondAttribute="centerX" id="oAW-yx-1Rg"/>
-                            <constraint firstItem="8Hc-vk-3MU" firstAttribute="leading" secondItem="UKx-4m-Jy4" secondAttribute="leadingMargin" constant="-20" id="yhW-qL-ON4"/>
+                            <constraint firstItem="HXF-TT-snm" firstAttribute="centerX" secondItem="OOM-ud-Xul" secondAttribute="centerX" id="9ji-xW-Nay"/>
+                            <constraint firstItem="5CD-uh-dUe" firstAttribute="baseline" secondItem="HXF-TT-snm" secondAttribute="baseline" constant="30" id="B4H-iU-jFI"/>
+                            <constraint firstItem="5CD-uh-dUe" firstAttribute="leading" secondItem="HXF-TT-snm" secondAttribute="leading" id="BPx-R9-4Wu"/>
+                            <constraint firstItem="HXF-TT-snm" firstAttribute="centerY" secondItem="OOM-ud-Xul" secondAttribute="centerY" id="NW5-fn-gIe"/>
+                            <constraint firstItem="ALW-cP-40c" firstAttribute="top" secondItem="5CD-uh-dUe" secondAttribute="bottom" constant="88" id="afD-yp-4fF"/>
+                            <constraint firstItem="V72-K2-0Vk" firstAttribute="baseline" secondItem="HXF-TT-snm" secondAttribute="baseline" constant="30" id="pMx-uQ-2HP"/>
+                            <constraint firstItem="V72-K2-0Vk" firstAttribute="trailing" secondItem="HXF-TT-snm" secondAttribute="trailing" id="z1d-eO-q7Q"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="facebookButton" destination="a1R-Hm-Nm5" id="qq2-Rm-6zP"/>
-                        <outlet property="pinButton" destination="1u1-c6-pR0" id="YZn-Ai-MNQ"/>
-                        <outlet property="tweetButton" destination="k1Y-SX-B8f" id="Yfh-RM-QJx"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PMF-KA-UD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xE3-Hr-2kp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4015" y="326"/>
+            <point key="canvasLocation" x="3311" y="1084"/>
+        </scene>
+        <!--Freak Shake View Controller-->
+        <scene sceneID="qpD-lW-cv6">
+            <objects>
+                <viewController id="DwJ-7J-KrF" customClass="freakShakeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d1A-Uq-DtX"/>
+                        <viewControllerLayoutGuide type="bottom" id="rfx-DF-xs7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KpZ-6v-xmr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="904-8t-A4h">
+                                <rect key="frame" x="180" y="142" width="240" height="316"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3Mn-Ip-YRa"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIC-E6-e8f">
+                                <rect key="frame" x="180" y="468" width="67" height="30"/>
+                                <state key="normal" title="Facebook"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uge-0w-AtJ">
+                                <rect key="frame" x="372" y="468" width="48" height="30"/>
+                                <state key="normal" title="Twitter"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uge-0w-AtJ" firstAttribute="baseline" secondItem="904-8t-A4h" secondAttribute="baseline" constant="30" id="4IE-qQ-dvK"/>
+                            <constraint firstItem="904-8t-A4h" firstAttribute="centerX" secondItem="KpZ-6v-xmr" secondAttribute="centerX" id="8Xw-D5-mpf"/>
+                            <constraint firstItem="904-8t-A4h" firstAttribute="top" secondItem="d1A-Uq-DtX" secondAttribute="bottom" constant="78" id="G2I-2c-hPv"/>
+                            <constraint firstItem="Uge-0w-AtJ" firstAttribute="trailing" secondItem="904-8t-A4h" secondAttribute="trailing" id="NKC-uX-ZEt"/>
+                            <constraint firstItem="pIC-E6-e8f" firstAttribute="leading" secondItem="904-8t-A4h" secondAttribute="leading" id="YeJ-9R-AxC"/>
+                            <constraint firstItem="904-8t-A4h" firstAttribute="centerY" secondItem="KpZ-6v-xmr" secondAttribute="centerY" id="bS0-Ix-u2S"/>
+                            <constraint firstItem="pIC-E6-e8f" firstAttribute="baseline" secondItem="904-8t-A4h" secondAttribute="baseline" constant="30" id="f5c-1m-yLL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7UV-2b-L4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4049" y="-72"/>
+        </scene>
+        <!--Naptime Meme View Controller-->
+        <scene sceneID="2qB-OV-iX1">
+            <objects>
+                <viewController id="eye-Rd-OZD" customClass="naptimeMemeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qk1-Ht-Ylq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vvg-c5-aWO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LpQ-mg-jOP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-x0-AwD">
+                                <rect key="frame" x="91" y="495" width="67" height="30"/>
+                                <state key="normal" title="Facebook"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avh-pG-swc">
+                                <rect key="frame" x="461" y="495" width="48" height="30"/>
+                                <state key="normal" title="Twitter"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="60l-zZ-5cV">
+                                <rect key="frame" x="91" y="115" width="418" height="370"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="avh-pG-swc" firstAttribute="baseline" secondItem="60l-zZ-5cV" secondAttribute="baseline" constant="30" id="4cK-V5-uh2"/>
+                            <constraint firstItem="Vvg-c5-aWO" firstAttribute="top" secondItem="avh-pG-swc" secondAttribute="bottom" constant="75" id="7a4-Eq-7PF"/>
+                            <constraint firstItem="avh-pG-swc" firstAttribute="trailing" secondItem="60l-zZ-5cV" secondAttribute="trailing" id="EP2-yl-JMH"/>
+                            <constraint firstItem="l0k-x0-AwD" firstAttribute="leading" secondItem="60l-zZ-5cV" secondAttribute="leading" id="ETh-ng-MOs"/>
+                            <constraint firstItem="l0k-x0-AwD" firstAttribute="baseline" secondItem="60l-zZ-5cV" secondAttribute="baseline" constant="30" id="VDa-v8-etK"/>
+                            <constraint firstItem="60l-zZ-5cV" firstAttribute="centerY" secondItem="LpQ-mg-jOP" secondAttribute="centerY" id="l7D-yj-fOb"/>
+                            <constraint firstItem="60l-zZ-5cV" firstAttribute="centerX" secondItem="LpQ-mg-jOP" secondAttribute="centerX" id="neo-0g-eRH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="avh-pG-swc" secondAttribute="trailing" constant="71" id="p2D-zU-mIU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hL5-ec-TTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4049" y="678"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TeP-fB-wXj">

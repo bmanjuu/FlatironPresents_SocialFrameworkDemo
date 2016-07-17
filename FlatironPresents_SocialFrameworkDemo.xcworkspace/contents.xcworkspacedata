@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:FlatironPresents_SocialFrameworkDemo/pokemonGoMemeViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:FlatironPresents_SocialFrameworkDemo/pokemonGoMemeViewController.m">
+   </FileRef>
+   <FileRef
       location = "group:FlatironPresents_SocialFrameworkDemo.xcodeproj">
    </FileRef>
    <FileRef

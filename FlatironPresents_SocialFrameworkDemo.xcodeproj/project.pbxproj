@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1ED9B5D486AB2CCF93205DFD /* libPods-FlatironPresents_SocialFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C86271A3180D32A14F7FC0 /* libPods-FlatironPresents_SocialFrameworkDemo.a */; };
+		A42DB1311D3C4F90008698BF /* freakShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DB1301D3C4F90008698BF /* freakShakeViewController.m */; };
+		A42DB1341D3C4FEE008698BF /* naptimeMemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DB1331D3C4FEE008698BF /* naptimeMemeViewController.m */; };
 		A4441F101D3A81220080E03B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4441F0F1D3A81220080E03B /* main.m */; };
 		A4441F131D3A81220080E03B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4441F121D3A81220080E03B /* AppDelegate.m */; };
 		A4441F161D3A81220080E03B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4441F151D3A81220080E03B /* ViewController.m */; };
@@ -15,7 +17,6 @@
 		A4441F1B1D3A81220080E03B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4441F1A1D3A81220080E03B /* Assets.xcassets */; };
 		A4441F1E1D3A81220080E03B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4441F1C1D3A81220080E03B /* LaunchScreen.storyboard */; };
 		A47FA92C1D3ACCC4001C9ECD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47FA92B1D3ACCC4001C9ECD /* Social.framework */; };
-		A4F0331A1D3B0AB300C976EC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F033191D3B0AB300C976EC /* DetailViewController.m */; };
 		A4F033201D3B124600C976EC /* OurImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F0331F1D3B124600C976EC /* OurImageTableViewController.m */; };
 		A4F033231D3B13A400C976EC /* OurImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F033221D3B13A400C976EC /* OurImageTableViewCell.m */; };
 		A4F033271D3B15FE00C976EC /* pokemonGoMeme.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F033241D3B15FE00C976EC /* pokemonGoMeme.png */; };
@@ -27,6 +28,10 @@
 		0877C75D1BCA3A1D004959B2 /* Pods-FlatironPresents_SocialFrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatironPresents_SocialFrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlatironPresents_SocialFrameworkDemo/Pods-FlatironPresents_SocialFrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		44041434E678ABC4E097CF78 /* Pods-FlatironPresents_SocialFrameworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatironPresents_SocialFrameworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlatironPresents_SocialFrameworkDemo/Pods-FlatironPresents_SocialFrameworkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		87C86271A3180D32A14F7FC0 /* libPods-FlatironPresents_SocialFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlatironPresents_SocialFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42DB12F1D3C4F90008698BF /* freakShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freakShakeViewController.h; sourceTree = "<group>"; };
+		A42DB1301D3C4F90008698BF /* freakShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = freakShakeViewController.m; sourceTree = "<group>"; };
+		A42DB1321D3C4FEE008698BF /* naptimeMemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = naptimeMemeViewController.h; sourceTree = "<group>"; };
+		A42DB1331D3C4FEE008698BF /* naptimeMemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = naptimeMemeViewController.m; sourceTree = "<group>"; };
 		A4441F0B1D3A81220080E03B /* FlatironPresents_SocialFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlatironPresents_SocialFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4441F0F1D3A81220080E03B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4441F111D3A81220080E03B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,8 +43,6 @@
 		A4441F1D1D3A81220080E03B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4441F1F1D3A81220080E03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47FA92B1D3ACCC4001C9ECD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		A4F033181D3B0AB300C976EC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		A4F033191D3B0AB300C976EC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		A4F0331E1D3B124600C976EC /* OurImageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurImageTableViewController.h; sourceTree = "<group>"; };
 		A4F0331F1D3B124600C976EC /* OurImageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurImageTableViewController.m; sourceTree = "<group>"; };
 		A4F033211D3B13A400C976EC /* OurImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurImageTableViewCell.h; sourceTree = "<group>"; };
@@ -107,11 +110,13 @@
 				A4441F151D3A81220080E03B /* ViewController.m */,
 				A4F033211D3B13A400C976EC /* OurImageTableViewCell.h */,
 				A4F033221D3B13A400C976EC /* OurImageTableViewCell.m */,
-				A4F033181D3B0AB300C976EC /* DetailViewController.h */,
-				A4F033191D3B0AB300C976EC /* DetailViewController.m */,
 				A4441F171D3A81220080E03B /* Main.storyboard */,
 				A4F0331E1D3B124600C976EC /* OurImageTableViewController.h */,
 				A4F0331F1D3B124600C976EC /* OurImageTableViewController.m */,
+				A42DB12F1D3C4F90008698BF /* freakShakeViewController.h */,
+				A42DB1301D3C4F90008698BF /* freakShakeViewController.m */,
+				A42DB1321D3C4FEE008698BF /* naptimeMemeViewController.h */,
+				A42DB1331D3C4FEE008698BF /* naptimeMemeViewController.m */,
 				A4F033241D3B15FE00C976EC /* pokemonGoMeme.png */,
 				A4F033251D3B15FE00C976EC /* naptimeMeme.jpg */,
 				A4F033261D3B15FE00C976EC /* freakshake.jpg */,
@@ -255,8 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4F0331A1D3B0AB300C976EC /* DetailViewController.m in Sources */,
+				A42DB1341D3C4FEE008698BF /* naptimeMemeViewController.m in Sources */,
 				A4441F161D3A81220080E03B /* ViewController.m in Sources */,
+				A42DB1311D3C4F90008698BF /* freakShakeViewController.m in Sources */,
 				A4F033231D3B13A400C976EC /* OurImageTableViewCell.m in Sources */,
 				A4441F131D3A81220080E03B /* AppDelegate.m in Sources */,
 				A4F033201D3B124600C976EC /* OurImageTableViewController.m in Sources */,
