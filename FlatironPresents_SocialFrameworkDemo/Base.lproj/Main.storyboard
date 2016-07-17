@@ -28,7 +28,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="awesomeImageView" destination="TXj-8p-MDK" id="9Ye-PX-N9A"/>
+                                    <outlet property="awesomeImageView" destination="TXj-8p-MDK" id="3ZW-G1-ByQ"/>
                                     <segue destination="dZu-ZA-qLK" kind="show" id="QZD-LB-ufU"/>
                                 </connections>
                             </tableViewCell>
@@ -57,51 +57,65 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-Hm-Nm5">
-                                <rect key="frame" x="20" y="514" width="71" height="30"/>
+                                <rect key="frame" x="50" y="546" width="71" height="30"/>
                                 <state key="normal" title="Facebook!"/>
                                 <connections>
                                     <action selector="facebookButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="cvK-Ax-ZmN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1Y-SX-B8f">
-                                <rect key="frame" x="265" y="514" width="70" height="30"/>
+                                <rect key="frame" x="271" y="546" width="59" height="30"/>
                                 <state key="normal" title="Tweet It!"/>
                                 <connections>
                                     <action selector="tweetButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="hlA-p6-h0b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u1-c6-pR0">
-                                <rect key="frame" x="541" y="514" width="39" height="30"/>
+                                <rect key="frame" x="511" y="546" width="39" height="30"/>
                                 <state key="normal" title="Pin It!"/>
                                 <connections>
                                     <action selector="pinButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="YCX-CB-c1L"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aCU-L6-FJh">
-                                <rect key="frame" x="20" y="105" width="560" height="390"/>
-                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Hc-vk-3MU">
+                                <rect key="frame" x="0.0" y="64" width="600" height="472"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="selectedImageCell" id="R4B-4i-dxe" customClass="OurImageTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R4B-4i-dxe" id="e5J-tB-she">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNq-0e-DBm">
+                                                    <rect key="frame" x="180" y="-52" width="240" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="a1R-Hm-Nm5" firstAttribute="top" secondItem="aCU-L6-FJh" secondAttribute="bottom" constant="19" id="3m6-E7-LGG"/>
-                            <constraint firstItem="aCU-L6-FJh" firstAttribute="leading" secondItem="UKx-4m-Jy4" secondAttribute="leadingMargin" id="Aky-Wy-SAY"/>
-                            <constraint firstItem="1u1-c6-pR0" firstAttribute="baseline" secondItem="k1Y-SX-B8f" secondAttribute="baseline" id="Fxf-8g-CUw"/>
-                            <constraint firstItem="aCU-L6-FJh" firstAttribute="centerX" secondItem="UKx-4m-Jy4" secondAttribute="centerX" id="I7u-QD-yWM"/>
-                            <constraint firstItem="a1R-Hm-Nm5" firstAttribute="leading" secondItem="aCU-L6-FJh" secondAttribute="leading" id="TOu-wN-G3e"/>
-                            <constraint firstItem="1u1-c6-pR0" firstAttribute="trailing" secondItem="aCU-L6-FJh" secondAttribute="trailing" id="XGT-bR-FFP"/>
-                            <constraint firstItem="k1Y-SX-B8f" firstAttribute="leading" secondItem="UKx-4m-Jy4" secondAttribute="leading" constant="265" id="adK-to-f0x"/>
-                            <constraint firstItem="k1Y-SX-B8f" firstAttribute="centerX" secondItem="aCU-L6-FJh" secondAttribute="centerX" id="hyg-6B-hCI"/>
-                            <constraint firstItem="aCU-L6-FJh" firstAttribute="centerY" secondItem="UKx-4m-Jy4" secondAttribute="centerY" id="j6x-UC-fjg"/>
-                            <constraint firstItem="aCU-L6-FJh" firstAttribute="top" secondItem="aMb-lR-I1w" secondAttribute="bottom" constant="41" id="ltf-jz-daQ"/>
-                            <constraint firstItem="1u1-c6-pR0" firstAttribute="top" secondItem="aCU-L6-FJh" secondAttribute="bottom" constant="19" id="v9Q-4j-fYy"/>
+                            <constraint firstItem="8Hc-vk-3MU" firstAttribute="top" secondItem="aMb-lR-I1w" secondAttribute="bottom" id="F02-yf-f5N"/>
+                            <constraint firstItem="1u1-c6-pR0" firstAttribute="trailing" secondItem="8Hc-vk-3MU" secondAttribute="trailing" constant="-50" id="KOB-sz-LpF"/>
+                            <constraint firstItem="8Hc-vk-3MU" firstAttribute="width" secondItem="UKx-4m-Jy4" secondAttribute="width" id="MlQ-a8-a9G"/>
+                            <constraint firstItem="1u1-c6-pR0" firstAttribute="baseline" secondItem="8Hc-vk-3MU" secondAttribute="baseline" constant="30" id="Rn4-6d-QJ8"/>
+                            <constraint firstItem="8Hc-vk-3MU" firstAttribute="centerX" secondItem="UKx-4m-Jy4" secondAttribute="centerX" id="aZb-1L-oLK"/>
+                            <constraint firstItem="k1Y-SX-B8f" firstAttribute="baseline" secondItem="8Hc-vk-3MU" secondAttribute="baseline" constant="30" id="ax0-7X-kMe"/>
+                            <constraint firstItem="8Hc-vk-3MU" firstAttribute="centerY" secondItem="UKx-4m-Jy4" secondAttribute="centerY" id="cnF-Pn-gMT"/>
+                            <constraint firstItem="a1R-Hm-Nm5" firstAttribute="leading" secondItem="8Hc-vk-3MU" secondAttribute="leading" constant="50" id="hiS-cO-Wtk"/>
+                            <constraint firstItem="a1R-Hm-Nm5" firstAttribute="baseline" secondItem="8Hc-vk-3MU" secondAttribute="baseline" constant="30" id="o66-s8-XTe"/>
+                            <constraint firstItem="k1Y-SX-B8f" firstAttribute="centerX" secondItem="8Hc-vk-3MU" secondAttribute="centerX" id="oAW-yx-1Rg"/>
+                            <constraint firstItem="8Hc-vk-3MU" firstAttribute="leading" secondItem="UKx-4m-Jy4" secondAttribute="leadingMargin" constant="-20" id="yhW-qL-ON4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="facebookButton" destination="a1R-Hm-Nm5" id="qq2-Rm-6zP"/>
                         <outlet property="pinButton" destination="1u1-c6-pR0" id="YZn-Ai-MNQ"/>
-                        <outlet property="selectedImage" destination="aCU-L6-FJh" id="VvL-cC-OnD"/>
                         <outlet property="tweetButton" destination="k1Y-SX-B8f" id="Yfh-RM-QJx"/>
-                        <outlet property="userSelectedImage" destination="aCU-L6-FJh" id="uFi-JM-hRM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMF-KA-UD9" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -22,9 +22,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.userSelectedImage.image = self.selectedImageViewCell.imageView.image;
-    self.userSelectedImage.contentMode = UIViewContentModeScaleAspectFit; //scales image so that it fits the view! whoohoo
+    self.selectedImageViewCell.imageView.image = self.userSelectedImage.image;
     
+    //self.selectedImageViewCell.contentMode = UIViewContentModeScaleAspectFit; //scales image so that it fits the view! whoohoo
+    
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    OurImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageCell" forIndexPath:indexPath];
+    cell.awesomeImageView.image = self.userSelectedImage.image;
+    cell.awesomeImageView.contentMode = UIViewContentModeScaleAspectFit; //this makes the image fit within the space of the row, want to have the row expand to fit the image! can use this for the detail view controller (for the imageView named selectedImage)
+    
+    //add self-sizing table view cells stuff here too :)
+    
+    return cell;
 }
 
 //MARK - button methods

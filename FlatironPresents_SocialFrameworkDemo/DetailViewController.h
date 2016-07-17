@@ -14,5 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *userSelectedImage;
 @property (weak, nonatomic) OurImageTableViewCell *selectedImageViewCell;
+@property (nonatomic) NSUInteger selectedImageIndex; 
 
 @end

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OurImageTableViewCell.h"
 
 @interface OurImageTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSMutableArray *images;
+// @property (strong, nonatomic) OurImageTableViewCell *awesomeImageView;
+//@property (weak, nonatomic) IBOutlet UIImageView *awesomeImageView;
 
 @end

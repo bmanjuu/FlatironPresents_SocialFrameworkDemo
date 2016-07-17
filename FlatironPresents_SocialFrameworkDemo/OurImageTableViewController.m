@@ -57,9 +57,12 @@
     
     DetailViewController *detailVC = (DetailViewController *)segue.destinationViewController;
     
-    OurImageTableViewCell *selectedCell = (OurImageTableViewCell *)sender;
-    detailVC.selectedImageViewCell.imageView.image = selectedCell.awesomeImageView.image;
+    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
     
+    OurImageTableViewCell *selectedCell = (OurImageTableViewCell *)sender;
+    
+    detailVC.userSelectedImage.image = selectedCell.imageView.image;
+    detailVC.selectedImageIndex = selectedIndexPath.row;
 }
 
 
