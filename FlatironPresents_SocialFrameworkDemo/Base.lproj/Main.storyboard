@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Our Image Table View Controller-->
@@ -55,32 +56,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCU-L6-FJh">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-Hm-Nm5">
-                                <rect key="frame" x="67" y="452" width="71" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-Hm-Nm5">
+                                <rect key="frame" x="20" y="514" width="71" height="30"/>
                                 <state key="normal" title="Facebook!"/>
                                 <connections>
                                     <action selector="facebookButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="cvK-Ax-ZmN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1Y-SX-B8f">
-                                <rect key="frame" x="271" y="452" width="59" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1Y-SX-B8f">
+                                <rect key="frame" x="265" y="514" width="59" height="30"/>
                                 <state key="normal" title="Tweet It!"/>
                                 <connections>
                                     <action selector="tweetButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="hlA-p6-h0b"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u1-c6-pR0">
-                                <rect key="frame" x="461" y="452" width="39" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u1-c6-pR0">
+                                <rect key="frame" x="541" y="514" width="39" height="30"/>
                                 <state key="normal" title="Pin It!"/>
                                 <connections>
                                     <action selector="pinButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="YCX-CB-c1L"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aCU-L6-FJh">
+                                <rect key="frame" x="20" y="105" width="560" height="390"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a1R-Hm-Nm5" firstAttribute="top" secondItem="aCU-L6-FJh" secondAttribute="bottom" constant="19" id="3m6-E7-LGG"/>
+                            <constraint firstItem="aCU-L6-FJh" firstAttribute="leading" secondItem="UKx-4m-Jy4" secondAttribute="leadingMargin" id="Aky-Wy-SAY"/>
+                            <constraint firstItem="1u1-c6-pR0" firstAttribute="baseline" secondItem="k1Y-SX-B8f" secondAttribute="baseline" id="Fxf-8g-CUw"/>
+                            <constraint firstItem="aCU-L6-FJh" firstAttribute="centerX" secondItem="UKx-4m-Jy4" secondAttribute="centerX" id="I7u-QD-yWM"/>
+                            <constraint firstItem="a1R-Hm-Nm5" firstAttribute="leading" secondItem="aCU-L6-FJh" secondAttribute="leading" id="TOu-wN-G3e"/>
+                            <constraint firstItem="1u1-c6-pR0" firstAttribute="trailing" secondItem="aCU-L6-FJh" secondAttribute="trailing" id="XGT-bR-FFP"/>
+                            <constraint firstItem="k1Y-SX-B8f" firstAttribute="leading" secondItem="UKx-4m-Jy4" secondAttribute="leading" constant="265" id="adK-to-f0x"/>
+                            <constraint firstItem="aCU-L6-FJh" firstAttribute="centerY" secondItem="UKx-4m-Jy4" secondAttribute="centerY" id="j6x-UC-fjg"/>
+                            <constraint firstItem="aCU-L6-FJh" firstAttribute="top" secondItem="aMb-lR-I1w" secondAttribute="bottom" constant="41" id="ltf-jz-daQ"/>
+                            <constraint firstItem="1u1-c6-pR0" firstAttribute="top" secondItem="aCU-L6-FJh" secondAttribute="bottom" constant="19" id="v9Q-4j-fYy"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="facebookButton" destination="a1R-Hm-Nm5" id="qq2-Rm-6zP"/>

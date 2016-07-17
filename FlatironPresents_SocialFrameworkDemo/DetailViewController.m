@@ -20,6 +20,12 @@
 
 @implementation DetailViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.selectedImage.contentMode = UIViewContentModeScaleAspectFit; //scales image so that it fits the view! whoohoo
+    
+}
+
 //MARK - button methods
 - (IBAction)tweetButtonTapped:(id)sender {
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])

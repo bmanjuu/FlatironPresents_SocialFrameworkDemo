@@ -40,7 +40,7 @@
     
     OurImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageCell" forIndexPath:indexPath];
     cell.awesomeImageView.image = self.images[indexPath.row];
-    cell.awesomeImageView.contentMode = UIViewContentModeScaleAspectFit;
+    cell.awesomeImageView.contentMode = UIViewContentModeScaleAspectFit; //this makes the image fit within the space of the row, want to have the row expand to fit the image! can use this for the detail view controller (for the imageView named selectedImage)
     
     //add self-sizing table view cells stuff here too :)
     
