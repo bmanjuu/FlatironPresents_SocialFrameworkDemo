@@ -18,8 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //extra stuff
-    //MARK - code for images
+    //ideas
+    // 1. change buttons in detailVC to have the social media icons, such as "Tweet It!" will have the twitter bird icon and etc.
+    // 2. label in detailVC under picture that shows source of image, such as Instagram or BuzzFeed
+    
+    
+    
+    //image sources
     //freakshake image
 //    NSData *freakshake = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s750x750/sh0.08/e35/12918017_215917625457787_361844434_n.jpg?ig_cache_key=MTIzNzU0NDg2OTQ2NDg0NDc3NA%3D%3D.2"]];
 //    UIImage *freakShakeImage = [UIImage imageWithData:freakshake];

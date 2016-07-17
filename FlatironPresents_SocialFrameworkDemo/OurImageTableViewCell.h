@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "OurImageTableViewController.h"
 
+
 @interface OurImageTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *awesomeImageView;

@@ -7,14 +7,13 @@
 //
 
 #import "DetailViewController.h"
-#import "ViewController.h"
+#import "OurImageTableViewController.h"
 
 @interface DetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *tweetButton;
 @property (weak, nonatomic) IBOutlet UIButton *pinButton;
 @property (weak, nonatomic) IBOutlet UIButton *facebookButton;
-@property (weak, nonatomic) IBOutlet UIImageView *selectedImage;
 
 @end
 
@@ -22,7 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.selectedImage.contentMode = UIViewContentModeScaleAspectFit; //scales image so that it fits the view! whoohoo
+    
+    self.userSelectedImage.image = self.selectedImageViewCell.imageView.image;
+    self.userSelectedImage.contentMode = UIViewContentModeScaleAspectFit; //scales image so that it fits the view! whoohoo
     
 }
 

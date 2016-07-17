@@ -7,7 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "OurImageTableViewCell.h"
+
 
 @interface DetailViewController : ViewController
+
+@property (weak, nonatomic) IBOutlet UIImageView *userSelectedImage;
+@property (weak, nonatomic) OurImageTableViewCell *selectedImageViewCell;
 
 @end

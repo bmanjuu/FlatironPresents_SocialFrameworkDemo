@@ -8,6 +8,7 @@
 
 #import "OurImageTableViewController.h"
 #import "OurImageTableViewCell.h"
+#import "DetailViewController.h"
 
 @implementation OurImageTableViewController
 
@@ -54,11 +55,10 @@
     
     //tableviewcell is the sender
     
-    OurImageTableViewCell *detailVC = (OurImageTableViewCell *)segue.destinationViewController;
+    DetailViewController *detailVC = (DetailViewController *)segue.destinationViewController;
     
-    UITableViewCell *selectedCell = (UITableViewCell *)sender;
-    // detailVC.picture = selectedCell.textLabel.text;
-    //pass selected image along into detailVC 
+    OurImageTableViewCell *selectedCell = (OurImageTableViewCell *)sender;
+    detailVC.selectedImageViewCell.imageView.image = selectedCell.awesomeImageView.image;
     
 }
 

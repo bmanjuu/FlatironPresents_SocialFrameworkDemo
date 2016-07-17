@@ -64,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1Y-SX-B8f">
-                                <rect key="frame" x="265" y="514" width="59" height="30"/>
+                                <rect key="frame" x="265" y="514" width="70" height="30"/>
                                 <state key="normal" title="Tweet It!"/>
                                 <connections>
                                     <action selector="tweetButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="hlA-p6-h0b"/>
@@ -90,6 +90,7 @@
                             <constraint firstItem="a1R-Hm-Nm5" firstAttribute="leading" secondItem="aCU-L6-FJh" secondAttribute="leading" id="TOu-wN-G3e"/>
                             <constraint firstItem="1u1-c6-pR0" firstAttribute="trailing" secondItem="aCU-L6-FJh" secondAttribute="trailing" id="XGT-bR-FFP"/>
                             <constraint firstItem="k1Y-SX-B8f" firstAttribute="leading" secondItem="UKx-4m-Jy4" secondAttribute="leading" constant="265" id="adK-to-f0x"/>
+                            <constraint firstItem="k1Y-SX-B8f" firstAttribute="centerX" secondItem="aCU-L6-FJh" secondAttribute="centerX" id="hyg-6B-hCI"/>
                             <constraint firstItem="aCU-L6-FJh" firstAttribute="centerY" secondItem="UKx-4m-Jy4" secondAttribute="centerY" id="j6x-UC-fjg"/>
                             <constraint firstItem="aCU-L6-FJh" firstAttribute="top" secondItem="aMb-lR-I1w" secondAttribute="bottom" constant="41" id="ltf-jz-daQ"/>
                             <constraint firstItem="1u1-c6-pR0" firstAttribute="top" secondItem="aCU-L6-FJh" secondAttribute="bottom" constant="19" id="v9Q-4j-fYy"/>
@@ -100,6 +101,7 @@
                         <outlet property="pinButton" destination="1u1-c6-pR0" id="YZn-Ai-MNQ"/>
                         <outlet property="selectedImage" destination="aCU-L6-FJh" id="VvL-cC-OnD"/>
                         <outlet property="tweetButton" destination="k1Y-SX-B8f" id="Yfh-RM-QJx"/>
+                        <outlet property="userSelectedImage" destination="aCU-L6-FJh" id="uFi-JM-hRM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMF-KA-UD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
