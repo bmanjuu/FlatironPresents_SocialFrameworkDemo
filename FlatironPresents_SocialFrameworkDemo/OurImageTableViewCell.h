@@ -10,6 +10,7 @@
 
 @interface OurImageTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *awesomeImageCell;
+@property (weak, nonatomic) IBOutlet UIImageView *awesomeImageView;
+
 
 @end

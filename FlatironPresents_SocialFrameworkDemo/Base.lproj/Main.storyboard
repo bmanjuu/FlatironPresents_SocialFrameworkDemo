@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aLh-Fm-QL9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -23,12 +23,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8DD-PM-dPx">
-                                            <rect key="frame" x="160" y="-57" width="240" height="128"/>
+                                            <rect key="frame" x="92" y="-57" width="500" height="128"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="awesomeImageCell" destination="8DD-PM-dPx" id="4rO-6A-cpa"/>
+                                    <outlet property="awesomeImageCell" destination="8DD-PM-dPx" id="6YE-AW-5qP"/>
+                                    <outlet property="awesomeImageView" destination="8DD-PM-dPx" id="CZE-2u-kKj"/>
                                     <segue destination="yeS-QN-UyU" kind="show" id="D3y-Zq-mDG"/>
                                 </connections>
                             </tableViewCell>

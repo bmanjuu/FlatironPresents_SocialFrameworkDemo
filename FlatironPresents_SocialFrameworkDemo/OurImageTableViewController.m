@@ -34,9 +34,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"coolImage" forIndexPath:indexPath];
-    
-    cell.imageView.image = self.images[indexPath.row]; //change this to image stuff
+    OurImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageCell" forIndexPath:indexPath];
+    cell.awesomeImageView.image = [UIImage imageNamed:@"freakshow"]; //change this to image stuff
     
     //add self-sizing table view cells stuff here too :)
     
