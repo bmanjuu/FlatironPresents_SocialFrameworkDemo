@@ -37,19 +37,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    // NSLog(@"cell created"); called 3 times, so 3 cells were created, but photos are not populating within the cell
     
     OurImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageCell" forIndexPath:indexPath];
-    cell.awesomeImageView.image = self.images[indexPath.row]; //change this to image stuff
+    cell.awesomeImageView.image = self.images[indexPath.row];
     cell.awesomeImageView.contentMode = UIViewContentModeScaleAspectFit;
     
     //add self-sizing table view cells stuff here too :)
-    
-    
-    //testing purposes only
-    //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageCell" forIndexPath:indexPath];
-    //
-    //    cell.textLabel.text = [NSString stringWithFormat:@"%lu", indexPath.row+1];
     
     return cell;
 }
@@ -65,11 +58,7 @@
     
     UITableViewCell *selectedCell = (UITableViewCell *)sender;
     // detailVC.picture = selectedCell.textLabel.text;
-    
-    //if property in .m detail is integer
-    //    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
-    //
-    //    detailVC.number = selectedIndexPath.row+1;
+    //pass selected image along into detailVC 
     
 }
 

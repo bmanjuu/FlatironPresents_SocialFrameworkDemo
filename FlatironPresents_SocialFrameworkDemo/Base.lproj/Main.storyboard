@@ -28,6 +28,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="awesomeImageView" destination="TXj-8p-MDK" id="9Ye-PX-N9A"/>
+                                    <segue destination="dZu-ZA-qLK" kind="show" id="QZD-LB-ufU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -41,6 +42,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRy-ho-m9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3311" y="326"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="his-DJ-odX">
+            <objects>
+                <viewController id="dZu-ZA-qLK" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aMb-lR-I1w"/>
+                        <viewControllerLayoutGuide type="bottom" id="6a6-32-NJN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UKx-4m-Jy4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCU-L6-FJh">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-Hm-Nm5">
+                                <rect key="frame" x="67" y="452" width="71" height="30"/>
+                                <state key="normal" title="Facebook!"/>
+                                <connections>
+                                    <action selector="facebookButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="cvK-Ax-ZmN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1Y-SX-B8f">
+                                <rect key="frame" x="271" y="452" width="59" height="30"/>
+                                <state key="normal" title="Tweet It!"/>
+                                <connections>
+                                    <action selector="tweetButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="hlA-p6-h0b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u1-c6-pR0">
+                                <rect key="frame" x="461" y="452" width="39" height="30"/>
+                                <state key="normal" title="Pin It!"/>
+                                <connections>
+                                    <action selector="pinButtonTapped:" destination="dZu-ZA-qLK" eventType="touchUpInside" id="YCX-CB-c1L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="facebookButton" destination="a1R-Hm-Nm5" id="qq2-Rm-6zP"/>
+                        <outlet property="pinButton" destination="1u1-c6-pR0" id="YZn-Ai-MNQ"/>
+                        <outlet property="selectedImage" destination="aCU-L6-FJh" id="VvL-cC-OnD"/>
+                        <outlet property="tweetButton" destination="k1Y-SX-B8f" id="Yfh-RM-QJx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMF-KA-UD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4015" y="326"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TeP-fB-wXj">
