@@ -10,6 +10,7 @@
 		1ED9B5D486AB2CCF93205DFD /* libPods-FlatironPresents_SocialFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C86271A3180D32A14F7FC0 /* libPods-FlatironPresents_SocialFrameworkDemo.a */; };
 		A42DB1311D3C4F90008698BF /* freakShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DB1301D3C4F90008698BF /* freakShakeViewController.m */; };
 		A42DB1341D3C4FEE008698BF /* naptimeMemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DB1331D3C4FEE008698BF /* naptimeMemeViewController.m */; };
+		A42DB13A1D3C566C008698BF /* pokemonGoMemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DB1391D3C566B008698BF /* pokemonGoMemeViewController.m */; };
 		A4441F101D3A81220080E03B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4441F0F1D3A81220080E03B /* main.m */; };
 		A4441F131D3A81220080E03B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4441F121D3A81220080E03B /* AppDelegate.m */; };
 		A4441F161D3A81220080E03B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4441F151D3A81220080E03B /* ViewController.m */; };
@@ -32,6 +33,8 @@
 		A42DB1301D3C4F90008698BF /* freakShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = freakShakeViewController.m; sourceTree = "<group>"; };
 		A42DB1321D3C4FEE008698BF /* naptimeMemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = naptimeMemeViewController.h; sourceTree = "<group>"; };
 		A42DB1331D3C4FEE008698BF /* naptimeMemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = naptimeMemeViewController.m; sourceTree = "<group>"; };
+		A42DB1381D3C566B008698BF /* pokemonGoMemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pokemonGoMemeViewController.h; sourceTree = "<group>"; };
+		A42DB1391D3C566B008698BF /* pokemonGoMemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pokemonGoMemeViewController.m; sourceTree = "<group>"; };
 		A4441F0B1D3A81220080E03B /* FlatironPresents_SocialFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlatironPresents_SocialFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4441F0F1D3A81220080E03B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4441F111D3A81220080E03B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				A42DB1301D3C4F90008698BF /* freakShakeViewController.m */,
 				A42DB1321D3C4FEE008698BF /* naptimeMemeViewController.h */,
 				A42DB1331D3C4FEE008698BF /* naptimeMemeViewController.m */,
+				A42DB1381D3C566B008698BF /* pokemonGoMemeViewController.h */,
+				A42DB1391D3C566B008698BF /* pokemonGoMemeViewController.m */,
 				A4F033241D3B15FE00C976EC /* pokemonGoMeme.png */,
 				A4F033251D3B15FE00C976EC /* naptimeMeme.jpg */,
 				A4F033261D3B15FE00C976EC /* freakshake.jpg */,
@@ -262,6 +267,7 @@
 			files = (
 				A42DB1341D3C4FEE008698BF /* naptimeMemeViewController.m in Sources */,
 				A4441F161D3A81220080E03B /* ViewController.m in Sources */,
+				A42DB13A1D3C566C008698BF /* pokemonGoMemeViewController.m in Sources */,
 				A42DB1311D3C4F90008698BF /* freakShakeViewController.m in Sources */,
 				A4F033231D3B13A400C976EC /* OurImageTableViewCell.m in Sources */,
 				A4441F131D3A81220080E03B /* AppDelegate.m in Sources */,

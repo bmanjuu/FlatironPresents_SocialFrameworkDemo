@@ -12,6 +12,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.pokemonGoMemeImage.image = [UIImage imageNamed:@"pokemonGoMeme.png"];
+    self.pokemonGoMemeImage.contentMode = UIViewContentModeScaleAspectFit;
 }
 
 @end

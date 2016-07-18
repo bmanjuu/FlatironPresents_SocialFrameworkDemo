@@ -12,6 +12,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.freakShakeImage.image = [UIImage imageNamed:@"freakshake.jpg"];
+    self.freakShakeImage.contentMode = UIViewContentModeScaleAspectFit;
 }
 
 @end

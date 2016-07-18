@@ -12,6 +12,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.naptimeMemeImage.image = [UIImage imageNamed:@"naptimeMeme.jpg"];
+    self.naptimeMemeImage.contentMode = UIViewContentModeScaleAspectFit;
 }
 
 @end

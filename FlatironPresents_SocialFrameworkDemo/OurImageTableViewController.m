@@ -51,20 +51,44 @@
 }
 
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.row == 0){
+        [self performSegueWithIdentifier:@"freakshake" sender:self];
+    }
+    else if (indexPath.row == 1){
+        [self performSegueWithIdentifier:@"naptimeMeme" sender:self];
+    }
+    else if (indexPath.row == 2){
+        [self performSegueWithIdentifier:@"pokemonGoMeme" sender:self];
+    }
     
-    if([segue.identifier isEqualToString: @"freakshake"]){
-        freakShakeViewController *freakShakeVC = (freakShakeViewController *)segue.destinationViewController;
-        freakShakeVC.freakShakeImage.image = [UIImage imageNamed:@"freakshake.jpg"];
-    }
-    else if ([segue.identifier isEqualToString: @"naptimeMeme"]){
-        naptimeMemeViewController *napVC = (naptimeMemeViewController *)segue.destinationViewController;
-        napVC.naptimeMemeImage.image = [UIImage imageNamed:@"naptimeMeme.jpg"];
-    }
-    else if ([segue.identifier isEqualToString: @"pokemonGoMeme"]){
-        pokemonGoMemeViewController *pokemonVC = (pokemonGoMemeViewController *)segue.destinationViewController;
-        pokemonVC.pokemonGoMemeImage.image = [UIImage imageNamed:@"pokemonGoMeme.png"]; 
-    }
+}
+
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    
+//    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+//    
+//    if(self.images[selectedIndexPath.row] == 0){
+//        [segue.identifier isEqualToString: @"freakshake"];
+//        freakShakeViewController *freakShakeVC = (freakShakeViewController *)segue.destinationViewController;
+//        freakShakeVC.freakShakeImage.image = [UIImage imageNamed:@"freakshake.jpg"];
+//    }
+
+//    if([segue.identifier isEqualToString: @"freakshake"]){
+//        NSLog(@"freakshake selected");
+//        freakShakeViewController *freakShakeVC = (freakShakeViewController *)segue.destinationViewController;
+//        freakShakeVC.freakShakeImage.image = [UIImage imageNamed:@"freakshake.jpg"];
+//    }
+//    else if ([segue.identifier isEqualToString: @"naptimeMeme"]){
+//        NSLog(@"nap selected");
+//        naptimeMemeViewController *napVC = (naptimeMemeViewController *)segue.destinationViewController;
+//        napVC.naptimeMemeImage.image = [UIImage imageNamed:@"naptimeMeme.jpg"];
+//    }
+//    else if ([segue.identifier isEqualToString: @"pokemonGoMeme"]){
+//        NSLog(@"pokemon selected");
+//        pokemonGoMemeViewController *pokemonVC = (pokemonGoMemeViewController *)segue.destinationViewController;
+//        pokemonVC.pokemonGoMemeImage.image = [UIImage imageNamed:@"pokemonGoMeme.png"];
+//    }
     
 //    DetailViewController *detailVC = (DetailViewController *)segue.destinationViewController;
 //    
@@ -76,7 +100,7 @@
 //    detailVC.userSelectedImage.image = self.images[selectedIndexPath.row];
 //    detailVC.selectedImageViewCell = selectedCell;
     
-}
+// }
 
 
 - (void)didReceiveMemoryWarning {
