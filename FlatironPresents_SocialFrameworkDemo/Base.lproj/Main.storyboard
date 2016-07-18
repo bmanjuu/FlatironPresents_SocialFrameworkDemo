@@ -15,18 +15,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" id="Py0-06-BJ7" customClass="OurImageTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="30" id="Py0-06-BJ7" customClass="OurImageTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Py0-06-BJ7" id="yrd-0k-7R0">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="29"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXj-8p-MDK">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXj-8p-MDK">
                                             <rect key="frame" x="55" y="0.0" width="492" height="43"/>
                                         </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="TXj-8p-MDK" secondAttribute="trailing" constant="53" id="5wm-WR-R3c"/>
+                                        <constraint firstAttribute="bottom" secondItem="TXj-8p-MDK" secondAttribute="bottom" constant="6" id="PM1-lp-3de"/>
+                                        <constraint firstItem="TXj-8p-MDK" firstAttribute="leading" secondItem="yrd-0k-7R0" secondAttribute="leading" constant="55" id="UG0-LX-pGd"/>
+                                        <constraint firstAttribute="trailing" secondItem="TXj-8p-MDK" secondAttribute="trailing" constant="53" id="o3I-Bg-ojc"/>
+                                        <constraint firstAttribute="bottom" secondItem="TXj-8p-MDK" secondAttribute="bottom" constant="6" id="pLt-nQ-u0H"/>
+                                        <constraint firstItem="TXj-8p-MDK" firstAttribute="leading" secondItem="yrd-0k-7R0" secondAttribute="leading" constant="55" id="qbb-XC-57j"/>
+                                        <constraint firstItem="TXj-8p-MDK" firstAttribute="top" secondItem="yrd-0k-7R0" secondAttribute="top" id="uIK-y0-bpw"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.83428773996509598" green="0.83428773996509598" blue="0.83428773996509598" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="awesomeImageView" destination="TXj-8p-MDK" id="3ZW-G1-ByQ"/>
                                 </connections>

@@ -24,9 +24,6 @@
     [self.images addObject:[UIImage imageNamed:@"naptimeMeme.jpg"]];
     [self.images addObject:[UIImage imageNamed:@"pokemonGoMeme.png"]];
     
-    // NSLog(@"number of images: %lu", self.images.count);
-    
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
@@ -41,11 +38,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    //resizing rows to fit the picture
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 10;
+    
+    //populating the cell with images
     OurImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageCell" forIndexPath:indexPath];
     cell.awesomeImageView.image = self.images[indexPath.row];
-    cell.awesomeImageView.contentMode = UIViewContentModeScaleAspectFit; //this makes the image fit within the space of the row, want to have the row expand to fit the image! can use this for the detail view controller (for the imageView named selectedImage)
-    
-    //add self-sizing table view cells stuff here too :)
+    cell.awesomeImageView.contentMode = UIViewContentModeScaleAspectFit; //this makes the image fit within the space of the row, want to have the row expand to fit the image!
     
     return cell;
 }

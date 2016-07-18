@@ -63,6 +63,39 @@
 //}
 
 
+
+//- (IBAction)postToFacebook:(id)sender {
+//    
+//    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+//        
+//        SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+//        
+//        [controller addImage:[UIImage imageNamed:@"IMAGE_NAME"]];
+//        
+//        [self presentViewController:controller animated:YES completion:Nil];
+//        
+//    }
+//    
+//}
+//
+//
+//
+//- (IBAction)postToTwitter:(id)sender {
+//    
+//    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
+//        
+//        SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+//        
+//        [tweetSheet addImage:[UIImage imageNamed:@"IMAGE_NAME"]];
+//        
+//        [self presentViewController:tweetSheet animated:YES completion:nil];
+//        
+//    }
+//    
+//}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
