@@ -36,7 +36,7 @@
                                         <constraint firstItem="TXj-8p-MDK" firstAttribute="top" secondItem="yrd-0k-7R0" secondAttribute="top" id="uIK-y0-bpw"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.83428773996509598" green="0.83428773996509598" blue="0.83428773996509598" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.68375532289999996" green="0.75904427750000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="awesomeImageView" destination="TXj-8p-MDK" id="3ZW-G1-ByQ"/>
                                 </connections>
@@ -88,7 +88,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.68375532289999996" green="0.75904427750000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="V72-K2-0Vk" firstAttribute="baseline" secondItem="HXF-TT-snm" secondAttribute="baseline" constant="28" id="4ln-Xd-ZjQ"/>
                             <constraint firstItem="HXF-TT-snm" firstAttribute="top" secondItem="kMV-e8-4uj" secondAttribute="bottom" constant="8" id="CpG-9c-Rci"/>
@@ -142,7 +142,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.68375532289999996" green="0.75904427750000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Uge-0w-AtJ" firstAttribute="baseline" secondItem="904-8t-A4h" secondAttribute="baseline" constant="28" id="4IE-qQ-dvK"/>
                             <constraint firstItem="904-8t-A4h" firstAttribute="centerX" secondItem="KpZ-6v-xmr" secondAttribute="centerX" id="8Xw-D5-mpf"/>
@@ -193,7 +193,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.68375532289999996" green="0.75904427750000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="l0k-x0-AwD" firstAttribute="leading" secondItem="60l-zZ-5cV" secondAttribute="leading" id="0Am-0p-xxP"/>
                             <constraint firstItem="60l-zZ-5cV" firstAttribute="leading" secondItem="LpQ-mg-jOP" secondAttribute="leadingMargin" id="3Sn-yL-b7n"/>
