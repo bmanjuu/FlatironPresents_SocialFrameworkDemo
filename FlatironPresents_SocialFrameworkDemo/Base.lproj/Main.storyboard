@@ -63,6 +63,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CD-uh-dUe">
                                 <rect key="frame" x="20" y="468" width="67" height="30"/>
                                 <state key="normal" title="Facebook"/>
+                                <connections>
+                                    <action selector="postToFacebook:" destination="ETT-Bu-fds" eventType="touchUpInside" id="95V-bx-Ipw"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HXF-TT-snm">
                                 <rect key="frame" x="20" y="72" width="560" height="388"/>
@@ -70,6 +73,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V72-K2-0Vk">
                                 <rect key="frame" x="532" y="468" width="48" height="30"/>
                                 <state key="normal" title="Twitter"/>
+                                <connections>
+                                    <action selector="postToTwitter:" destination="ETT-Bu-fds" eventType="touchUpInside" id="tp4-Od-uYm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -114,10 +120,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIC-E6-e8f">
                                 <rect key="frame" x="20" y="468" width="67" height="30"/>
                                 <state key="normal" title="Facebook"/>
+                                <connections>
+                                    <action selector="postToFacebook:" destination="DwJ-7J-KrF" eventType="touchUpInside" id="LIh-Kd-gOe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uge-0w-AtJ">
                                 <rect key="frame" x="532" y="468" width="48" height="30"/>
                                 <state key="normal" title="Twitter"/>
+                                <connections>
+                                    <action selector="postToTwitter:" destination="DwJ-7J-KrF" eventType="touchUpInside" id="Gvs-HV-L3u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -156,6 +168,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-x0-AwD">
                                 <rect key="frame" x="20" y="468" width="67" height="30"/>
                                 <state key="normal" title="Facebook"/>
+                                <connections>
+                                    <action selector="postToFacebook:" destination="eye-Rd-OZD" eventType="touchUpInside" id="T0V-o0-m2z"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="60l-zZ-5cV">
                                 <rect key="frame" x="20" y="72" width="560" height="388"/>
@@ -163,6 +178,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avh-pG-swc">
                                 <rect key="frame" x="532" y="468" width="48" height="30"/>
                                 <state key="normal" title="Twitter"/>
+                                <connections>
+                                    <action selector="postToTwitter:" destination="eye-Rd-OZD" eventType="touchUpInside" id="5zW-Hx-7VN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
