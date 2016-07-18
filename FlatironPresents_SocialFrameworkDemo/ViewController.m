@@ -94,6 +94,13 @@
 //    
 //}
 
+//[controller addImage:[UIImage imageNamed:@"imageNameHere.jpg"]];
+////can also be .png
+//
+//[controller setInitialText:@"Default text here!"];
+//
+//[controller addURL:[NSURL URLWithString:@"URL link here!"]];
+
 
 
 - (void)didReceiveMemoryWarning {

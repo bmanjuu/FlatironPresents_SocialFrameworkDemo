@@ -24,7 +24,7 @@
         
         [controller addImage:[UIImage imageNamed:@"pokemonGoMeme.png"]];
         
-        [self presentViewController:controller animated:YES completion:Nil];
+        [self presentViewController:controller animated:YES completion:nil];
         
     }
     
