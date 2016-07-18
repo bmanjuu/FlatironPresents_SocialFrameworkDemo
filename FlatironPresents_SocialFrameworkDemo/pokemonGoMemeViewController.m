@@ -35,7 +35,7 @@
         
         SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
         
-        [tweetSheet addImage:[UIImage imageNamed:@"pokemonGoMeme.jpg"]];
+        [tweetSheet addImage:[UIImage imageNamed:@"pokemonGoMeme.png"]];
         
         [self presentViewController:tweetSheet animated:YES completion:nil];
         

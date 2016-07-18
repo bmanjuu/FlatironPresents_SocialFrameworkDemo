@@ -38,15 +38,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    //resizing rows to fit the picture
+    //resizing rows to fit the picture (these 2 methods must be together!) 
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 10;
     
     //populating the cell with images
     OurImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageCell" forIndexPath:indexPath];
     cell.awesomeImageView.image = self.images[indexPath.row];
-    cell.awesomeImageView.contentMode = UIViewContentModeScaleAspectFit; //this makes the image fit within the space of the row, want to have the row expand to fit the image!
-    
+    cell.awesomeImageView.contentMode = UIViewContentModeScaleAspectFit; //this makes the image fit within the space of the row
     return cell;
 }
 
