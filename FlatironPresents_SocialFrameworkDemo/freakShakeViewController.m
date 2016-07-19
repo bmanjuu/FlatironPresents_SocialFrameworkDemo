@@ -7,6 +7,7 @@
 //
 
 #import "freakShakeViewController.h"
+
 #import <Social/Social.h>
 
 @implementation freakShakeViewController
@@ -23,7 +24,12 @@
         
         SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         
+        
+        //[controller addURL:[NSURL URLWithString:@"http://www.patissez.com.au/"]];
         [controller addImage:[UIImage imageNamed:@"freakshake.jpg"]];
+        
+        // can only do one per post for facebook
+        //when URL and image are both present, URL takes precedence (doesn't matter if it's before or after the image)
         
         [self presentViewController:controller animated:YES completion:Nil];
         
@@ -40,6 +46,9 @@
         SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
         
         [tweetSheet addImage:[UIImage imageNamed:@"freakshake.jpg"]];
+        [tweetSheet addURL:[NSURL URLWithString:@"http://www.patissez.com.au/"]];
+        [tweetSheet setInitialText:@"My milkshake brings all the Pokemon to the yard"];
+        //twitter can do all three at the same time! 
         
         [self presentViewController:tweetSheet animated:YES completion:nil];
         

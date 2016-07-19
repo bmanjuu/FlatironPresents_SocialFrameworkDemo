@@ -18,9 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //ideas
-    // 1. change buttons in detailVC to have the social media icons, such as "Tweet It!" will have the twitter bird icon and etc.
-    // 2. label in detailVC under picture that shows source of image, such as Instagram or BuzzFeed
     
     
     

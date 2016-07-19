@@ -181,6 +181,7 @@
 				TargetAttributes = {
 					A4441F0A1D3A81210080E03B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4E8JHBC5T7;
 					};
 				};
 			};
@@ -393,10 +394,13 @@
 			baseConfigurationReference = 0877C75D1BCA3A1D004959B2 /* Pods-FlatironPresents_SocialFrameworkDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlatironPresents_SocialFrameworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bettyfung.FlatironPresents-SocialFrameworkDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -405,10 +409,13 @@
 			baseConfigurationReference = 44041434E678ABC4E097CF78 /* Pods-FlatironPresents_SocialFrameworkDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlatironPresents_SocialFrameworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bettyfung.FlatironPresents-SocialFrameworkDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
