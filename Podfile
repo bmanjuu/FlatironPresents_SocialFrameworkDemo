@@ -5,7 +5,7 @@
 
 target 'FlatironPresents_SocialFrameworkDemo' do
 
-pod “PinterestSDK”, :git => “git@github.com:pinterest/ios-pdk.git”
+# pod “PinterestSDK”, :git => “git@github.com:pinterest/ios-pdk.git”
 
 end
 

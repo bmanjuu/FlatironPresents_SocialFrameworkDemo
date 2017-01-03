@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "PDKClient.h"
+//#import "PDKClient.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
     // Override point for customization after application launch.
     
     //configured the PDK client by linking it with AppID
-    [PDKClient configureSharedInstanceWithAppId:@"4845899245292635740"];
+    //[PDKClient configureSharedInstanceWithAppId:@"4876889176752009285"];
     return YES;
 }
 

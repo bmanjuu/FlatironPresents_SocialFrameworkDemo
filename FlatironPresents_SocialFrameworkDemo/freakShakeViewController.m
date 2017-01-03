@@ -7,7 +7,6 @@
 //
 
 #import "freakShakeViewController.h"
-
 #import <Social/Social.h>
 
 @implementation freakShakeViewController

@@ -8,7 +8,6 @@
 
 #import "OurImageTableViewController.h"
 #import "OurImageTableViewCell.h"
-#import "pokemonGoMemeViewController.h"
 #import "freakShakeViewController.h"
 #import "naptimeMemeViewController.h"
 
@@ -22,7 +21,6 @@
     //adding images to array
     [self.images addObject:[UIImage imageNamed:@"freakshake.jpg"]];
     [self.images addObject:[UIImage imageNamed:@"naptimeMeme.jpg"]];
-    [self.images addObject:[UIImage imageNamed:@"pokemonGoMeme.png"]];
     
 }
 
@@ -57,10 +55,6 @@
     else if (indexPath.row == 1){
         [self performSegueWithIdentifier:@"naptimeMeme" sender:self];
     }
-    else if (indexPath.row == 2){
-        [self performSegueWithIdentifier:@"pokemonGoMeme" sender:self];
-    }
-    
 }
 
 //- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

@@ -10,7 +10,6 @@
 		1C3D4947A6163736B6381AC3 /* libPods-FlatironPresents_SocialFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A35F6A0C76ECFF108A458A /* libPods-FlatironPresents_SocialFrameworkDemo.a */; };
 		A42DB1311D3C4F90008698BF /* freakShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DB1301D3C4F90008698BF /* freakShakeViewController.m */; };
 		A42DB1341D3C4FEE008698BF /* naptimeMemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DB1331D3C4FEE008698BF /* naptimeMemeViewController.m */; };
-		A42DB13A1D3C566C008698BF /* pokemonGoMemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DB1391D3C566B008698BF /* pokemonGoMemeViewController.m */; };
 		A4441F101D3A81220080E03B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4441F0F1D3A81220080E03B /* main.m */; };
 		A4441F131D3A81220080E03B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4441F121D3A81220080E03B /* AppDelegate.m */; };
 		A4441F161D3A81220080E03B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4441F151D3A81220080E03B /* ViewController.m */; };
@@ -22,7 +21,6 @@
 		A4CA2B9E1D3D493F006BA1C7 /* facebookLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA2B9C1D3D493F006BA1C7 /* facebookLogo.png */; };
 		A4F033201D3B124600C976EC /* OurImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F0331F1D3B124600C976EC /* OurImageTableViewController.m */; };
 		A4F033231D3B13A400C976EC /* OurImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F033221D3B13A400C976EC /* OurImageTableViewCell.m */; };
-		A4F033271D3B15FE00C976EC /* pokemonGoMeme.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F033241D3B15FE00C976EC /* pokemonGoMeme.png */; };
 		A4F033281D3B15FE00C976EC /* naptimeMeme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4F033251D3B15FE00C976EC /* naptimeMeme.jpg */; };
 		A4F033291D3B15FE00C976EC /* freakshake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4F033261D3B15FE00C976EC /* freakshake.jpg */; };
 /* End PBXBuildFile section */
@@ -35,8 +33,6 @@
 		A42DB1301D3C4F90008698BF /* freakShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = freakShakeViewController.m; sourceTree = "<group>"; };
 		A42DB1321D3C4FEE008698BF /* naptimeMemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = naptimeMemeViewController.h; sourceTree = "<group>"; };
 		A42DB1331D3C4FEE008698BF /* naptimeMemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = naptimeMemeViewController.m; sourceTree = "<group>"; };
-		A42DB1381D3C566B008698BF /* pokemonGoMemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pokemonGoMemeViewController.h; sourceTree = "<group>"; };
-		A42DB1391D3C566B008698BF /* pokemonGoMemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pokemonGoMemeViewController.m; sourceTree = "<group>"; };
 		A4441F0B1D3A81220080E03B /* FlatironPresents_SocialFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlatironPresents_SocialFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4441F0F1D3A81220080E03B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4441F111D3A81220080E03B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,7 +50,6 @@
 		A4F0331F1D3B124600C976EC /* OurImageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurImageTableViewController.m; sourceTree = "<group>"; };
 		A4F033211D3B13A400C976EC /* OurImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurImageTableViewCell.h; sourceTree = "<group>"; };
 		A4F033221D3B13A400C976EC /* OurImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurImageTableViewCell.m; sourceTree = "<group>"; };
-		A4F033241D3B15FE00C976EC /* pokemonGoMeme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pokemonGoMeme.png; path = ../../../Downloads/pokemonGoMeme.png; sourceTree = "<group>"; };
 		A4F033251D3B15FE00C976EC /* naptimeMeme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = naptimeMeme.jpg; path = ../../../Downloads/naptimeMeme.jpg; sourceTree = "<group>"; };
 		A4F033261D3B15FE00C976EC /* freakshake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = freakshake.jpg; path = ../../../Downloads/freakshake.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,9 +110,6 @@
 				A42DB1301D3C4F90008698BF /* freakShakeViewController.m */,
 				A42DB1321D3C4FEE008698BF /* naptimeMemeViewController.h */,
 				A42DB1331D3C4FEE008698BF /* naptimeMemeViewController.m */,
-				A42DB1381D3C566B008698BF /* pokemonGoMemeViewController.h */,
-				A42DB1391D3C566B008698BF /* pokemonGoMemeViewController.m */,
-				A4F033241D3B15FE00C976EC /* pokemonGoMeme.png */,
 				A4F033251D3B15FE00C976EC /* naptimeMeme.jpg */,
 				A4F033261D3B15FE00C976EC /* freakshake.jpg */,
 				A4CA2B9B1D3D493F006BA1C7 /* twitterLogo.png */,
@@ -215,7 +207,6 @@
 				A4F033281D3B15FE00C976EC /* naptimeMeme.jpg in Resources */,
 				A4441F191D3A81220080E03B /* Main.storyboard in Resources */,
 				A4CA2B9E1D3D493F006BA1C7 /* facebookLogo.png in Resources */,
-				A4F033271D3B15FE00C976EC /* pokemonGoMeme.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +255,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -276,7 +267,6 @@
 			files = (
 				A42DB1341D3C4FEE008698BF /* naptimeMemeViewController.m in Sources */,
 				A4441F161D3A81220080E03B /* ViewController.m in Sources */,
-				A42DB13A1D3C566C008698BF /* pokemonGoMemeViewController.m in Sources */,
 				A42DB1311D3C4F90008698BF /* freakShakeViewController.m in Sources */,
 				A4F033231D3B13A400C976EC /* OurImageTableViewCell.m in Sources */,
 				A4441F131D3A81220080E03B /* AppDelegate.m in Sources */,

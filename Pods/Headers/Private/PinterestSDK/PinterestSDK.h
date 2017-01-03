@@ -1,1 +1,0 @@
-../../../PinterestSDK/Pod/Classes/PinterestSDK.h

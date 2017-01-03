@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SVS-Je-VI4">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SVS-Je-VI4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Our Image Table View Controller-->
@@ -11,15 +15,15 @@
             <objects>
                 <tableViewController id="3wo-wp-9Kj" customClass="OurImageTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ELv-lP-EZu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="30" id="Py0-06-BJ7" customClass="OurImageTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="30"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Py0-06-BJ7" id="yrd-0k-7R0">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="29"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="29"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXj-8p-MDK">
@@ -36,7 +40,7 @@
                                         <constraint firstItem="TXj-8p-MDK" firstAttribute="top" secondItem="yrd-0k-7R0" secondAttribute="top" id="uIK-y0-bpw"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.68375532289999996" green="0.75904427750000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.68375532289999996" green="0.75904427750000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="awesomeImageView" destination="TXj-8p-MDK" id="3ZW-G1-ByQ"/>
                                 </connections>
@@ -51,64 +55,11 @@
                     <connections>
                         <segue destination="DwJ-7J-KrF" kind="show" identifier="freakshake" id="ndJ-do-dHX"/>
                         <segue destination="eye-Rd-OZD" kind="show" identifier="naptimeMeme" id="fjT-61-qeK"/>
-                        <segue destination="ETT-Bu-fds" kind="show" identifier="pokemonGoMeme" id="Y1M-1R-mMu"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRy-ho-m9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3311" y="326"/>
-        </scene>
-        <!--Pokemon Go Meme View Controller-->
-        <scene sceneID="7fU-w9-np6">
-            <objects>
-                <viewController id="ETT-Bu-fds" customClass="pokemonGoMemeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kMV-e8-4uj"/>
-                        <viewControllerLayoutGuide type="bottom" id="ALW-cP-40c"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OOM-ud-Xul">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HXF-TT-snm">
-                                <rect key="frame" x="20" y="72" width="560" height="388"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CD-uh-dUe" userLabel="facebookButton">
-                                <rect key="frame" x="380" y="508" width="110" height="72"/>
-                                <state key="normal" image="facebookLogo.png"/>
-                                <connections>
-                                    <action selector="postToFacebook:" destination="ETT-Bu-fds" eventType="touchUpInside" id="95V-bx-Ipw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V72-K2-0Vk" userLabel="twitterButton">
-                                <rect key="frame" x="490" y="508" width="110" height="72"/>
-                                <state key="normal" image="twitterLogo.png"/>
-                                <connections>
-                                    <action selector="postToTwitter:" destination="ETT-Bu-fds" eventType="touchUpInside" id="tp4-Od-uYm"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.68375532289999996" green="0.75904427750000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="HXF-TT-snm" firstAttribute="top" secondItem="kMV-e8-4uj" secondAttribute="bottom" constant="8" id="CpG-9c-Rci"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="V72-K2-0Vk" secondAttribute="trailing" constant="-20" id="FoF-Nw-Wss"/>
-                            <constraint firstItem="HXF-TT-snm" firstAttribute="centerY" secondItem="OOM-ud-Xul" secondAttribute="centerY" constant="-34" id="IaU-B5-ccs"/>
-                            <constraint firstItem="5CD-uh-dUe" firstAttribute="centerY" secondItem="V72-K2-0Vk" secondAttribute="centerY" id="Lau-Id-qNn"/>
-                            <constraint firstItem="ALW-cP-40c" firstAttribute="top" secondItem="V72-K2-0Vk" secondAttribute="bottom" constant="20" id="ZVF-OW-LRm"/>
-                            <constraint firstItem="5CD-uh-dUe" firstAttribute="height" secondItem="V72-K2-0Vk" secondAttribute="height" id="bdP-BU-P2k"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="HXF-TT-snm" secondAttribute="leading" id="hZN-TN-iT6"/>
-                            <constraint firstItem="HXF-TT-snm" firstAttribute="centerX" secondItem="OOM-ud-Xul" secondAttribute="centerX" id="lq9-AO-7et"/>
-                            <constraint firstItem="V72-K2-0Vk" firstAttribute="leading" secondItem="5CD-uh-dUe" secondAttribute="trailing" id="rBN-uo-ToN"/>
-                            <constraint firstItem="5CD-uh-dUe" firstAttribute="width" secondItem="V72-K2-0Vk" secondAttribute="width" id="rfq-rZ-8hL"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="pokemonGoMemeImage" destination="HXF-TT-snm" id="QMv-U5-6WY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xE3-Hr-2kp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3311" y="1084"/>
         </scene>
         <!--Freak Shake View Controller-->
         <scene sceneID="qpD-lW-cv6">
@@ -119,23 +70,23 @@
                         <viewControllerLayoutGuide type="bottom" id="rfx-DF-xs7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KpZ-6v-xmr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="904-8t-A4h">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="904-8t-A4h">
                                 <rect key="frame" x="20" y="72" width="560" height="388"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="560" id="3Mn-Ip-YRa"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uge-0w-AtJ" userLabel="twitterButton">
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uge-0w-AtJ" userLabel="twitterButton">
                                 <rect key="frame" x="490" y="508" width="110" height="72"/>
                                 <state key="normal" image="twitterLogo.png"/>
                                 <connections>
                                     <action selector="postToTwitter:" destination="DwJ-7J-KrF" eventType="touchUpInside" id="Gvs-HV-L3u"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIC-E6-e8f" userLabel="facebookButton">
+                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIC-E6-e8f" userLabel="facebookButton">
                                 <rect key="frame" x="380" y="508" width="110" height="72"/>
                                 <state key="normal" image="facebookLogo.png"/>
                                 <connections>
@@ -143,13 +94,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.68375532289999996" green="0.75904427750000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.68375532289999996" green="0.75904427750000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="904-8t-A4h" firstAttribute="centerX" secondItem="KpZ-6v-xmr" secondAttribute="centerX" id="8Xw-D5-mpf"/>
                             <constraint firstItem="pIC-E6-e8f" firstAttribute="width" secondItem="Uge-0w-AtJ" secondAttribute="width" id="DpK-0B-Ygq"/>
                             <constraint firstItem="904-8t-A4h" firstAttribute="top" secondItem="d1A-Uq-DtX" secondAttribute="bottom" constant="8" id="G2I-2c-hPv"/>
                             <constraint firstItem="rfx-DF-xs7" firstAttribute="top" secondItem="Uge-0w-AtJ" secondAttribute="bottom" constant="20" id="G2a-Qx-XjV"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="904-8t-A4h" secondAttribute="leading" id="OW6-mP-PZn"/>
                             <constraint firstItem="Uge-0w-AtJ" firstAttribute="leading" secondItem="pIC-E6-e8f" secondAttribute="trailing" id="RK6-JM-ZbL"/>
                             <constraint firstItem="pIC-E6-e8f" firstAttribute="centerY" secondItem="Uge-0w-AtJ" secondAttribute="centerY" id="anG-Tr-Dno"/>
                             <constraint firstItem="904-8t-A4h" firstAttribute="centerY" secondItem="KpZ-6v-xmr" secondAttribute="centerY" constant="-34" id="bS0-Ix-u2S"/>
@@ -174,20 +124,20 @@
                         <viewControllerLayoutGuide type="bottom" id="Vvg-c5-aWO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LpQ-mg-jOP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="60l-zZ-5cV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60l-zZ-5cV">
                                 <rect key="frame" x="20" y="72" width="560" height="388"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avh-pG-swc" userLabel="twitterButton">
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avh-pG-swc" userLabel="twitterButton">
                                 <rect key="frame" x="490" y="508" width="110" height="72"/>
                                 <state key="normal" image="twitterLogo.png"/>
                                 <connections>
                                     <action selector="postToTwitter:" destination="eye-Rd-OZD" eventType="touchUpInside" id="5zW-Hx-7VN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-x0-AwD" userLabel="facebookButton">
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-x0-AwD" userLabel="facebookButton">
                                 <rect key="frame" x="380" y="508" width="110" height="72"/>
                                 <state key="normal" image="facebookLogo.png"/>
                                 <connections>
@@ -195,7 +145,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.68375532289999996" green="0.75904427750000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.68375532289999996" green="0.75904427750000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vvg-c5-aWO" firstAttribute="top" secondItem="avh-pG-swc" secondAttribute="bottom" constant="20" id="0ac-zg-Eu0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="avh-pG-swc" secondAttribute="trailing" constant="-20" id="3Hm-kn-sN1"/>

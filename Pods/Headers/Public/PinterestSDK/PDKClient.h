@@ -1,1 +1,0 @@
-../../../PinterestSDK/Pod/Classes/PDKClient.h
