@@ -23,7 +23,7 @@
     "AFNetworking": [
       "~> 3.0"
     ],
-    "SSKeychain": [
+    "SAMKeychain": [
 
     ]
   }
