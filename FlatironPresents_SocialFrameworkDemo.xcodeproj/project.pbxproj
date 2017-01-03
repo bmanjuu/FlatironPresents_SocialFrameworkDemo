@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C3D4947A6163736B6381AC3 /* libPods-FlatironPresents_SocialFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A35F6A0C76ECFF108A458A /* libPods-FlatironPresents_SocialFrameworkDemo.a */; };
 		A42DB1311D3C4F90008698BF /* freakShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DB1301D3C4F90008698BF /* freakShakeViewController.m */; };
 		A42DB1341D3C4FEE008698BF /* naptimeMemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DB1331D3C4FEE008698BF /* naptimeMemeViewController.m */; };
 		A4441F101D3A81220080E03B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4441F0F1D3A81220080E03B /* main.m */; };
@@ -20,6 +19,7 @@
 		A4CA2B9D1D3D493F006BA1C7 /* twitterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA2B9B1D3D493F006BA1C7 /* twitterLogo.png */; };
 		A4CA2B9E1D3D493F006BA1C7 /* facebookLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA2B9C1D3D493F006BA1C7 /* facebookLogo.png */; };
 		A4EE0CEA1E1C0E46009CFEE3 /* Pinterest-badge-36px.eps in Resources */ = {isa = PBXBuildFile; fileRef = A4EE0CE91E1C0E45009CFEE3 /* Pinterest-badge-36px.eps */; };
+		A4EE0CEE1E1C1DE3009CFEE3 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EE0CEB1E1C1C27009CFEE3 /* libAFNetworking.a */; };
 		A4F033201D3B124600C976EC /* OurImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F0331F1D3B124600C976EC /* OurImageTableViewController.m */; };
 		A4F033231D3B13A400C976EC /* OurImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F033221D3B13A400C976EC /* OurImageTableViewCell.m */; };
 		A4F033281D3B15FE00C976EC /* naptimeMeme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4F033251D3B15FE00C976EC /* naptimeMeme.jpg */; };
@@ -48,6 +48,7 @@
 		A4CA2B9B1D3D493F006BA1C7 /* twitterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitterLogo.png; path = ../../../Downloads/twitterLogo.png; sourceTree = "<group>"; };
 		A4CA2B9C1D3D493F006BA1C7 /* facebookLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebookLogo.png; path = ../../../Downloads/facebookLogo.png; sourceTree = "<group>"; };
 		A4EE0CE91E1C0E45009CFEE3 /* Pinterest-badge-36px.eps */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pinterest-badge-36px.eps"; path = "../../Pinterest-badge-36px.eps"; sourceTree = "<group>"; };
+		A4EE0CEB1E1C1C27009CFEE3 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../Library/Developer/Xcode/DerivedData/FlatironPresents_SocialFrameworkDemo-cbzlxevqgtjwwzgvepchbcvdngol/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		A4F0331E1D3B124600C976EC /* OurImageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurImageTableViewController.h; sourceTree = "<group>"; };
 		A4F0331F1D3B124600C976EC /* OurImageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurImageTableViewController.m; sourceTree = "<group>"; };
 		A4F033211D3B13A400C976EC /* OurImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurImageTableViewCell.h; sourceTree = "<group>"; };
@@ -61,8 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4EE0CEE1E1C1DE3009CFEE3 /* libAFNetworking.a in Frameworks */,
 				A47FA92C1D3ACCC4001C9ECD /* Social.framework in Frameworks */,
-				1C3D4947A6163736B6381AC3 /* libPods-FlatironPresents_SocialFrameworkDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +73,7 @@
 		4E69F29E385CA861F903EE70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4EE0CEB1E1C1C27009CFEE3 /* libAFNetworking.a */,
 				A47FA92B1D3ACCC4001C9ECD /* Social.framework */,
 				76A35F6A0C76ECFF108A458A /* libPods-FlatironPresents_SocialFrameworkDemo.a */,
 			);
@@ -177,6 +179,7 @@
 					A4441F0A1D3A81210080E03B = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 4E8JHBC5T7;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -390,6 +393,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4E8JHBC5T7;
 				INFOPLIST_FILE = FlatironPresents_SocialFrameworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bettyfung.FlatironPresents-SocialFrameworkDemo";
@@ -405,6 +409,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4E8JHBC5T7;
 				INFOPLIST_FILE = FlatironPresents_SocialFrameworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bettyfung.FlatironPresents-SocialFrameworkDemo";

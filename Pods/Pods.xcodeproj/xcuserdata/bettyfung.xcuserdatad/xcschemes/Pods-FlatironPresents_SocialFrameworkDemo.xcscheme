@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B389BC72B1AFD077843FC6ACDE8A9652'
+               BlueprintIdentifier = '7CDFB21C2F157AFE514E735009C46600'
                BlueprintName = 'Pods-FlatironPresents_SocialFrameworkDemo'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-FlatironPresents_SocialFrameworkDemo.a'>
