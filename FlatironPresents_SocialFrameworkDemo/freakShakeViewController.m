@@ -8,6 +8,7 @@
 
 #import "freakShakeViewController.h"
 #import <Social/Social.h>
+#import "AFNetworking.h"
 
 @implementation freakShakeViewController
 
@@ -52,6 +53,20 @@
         [self presentViewController:tweetSheet animated:YES completion:nil];
         
     }
+}
+
+- (IBAction)pinToPinterest:(id)sender {
+    [self pinterestUserOAuth];
+    //networking call
+    //pin! 
+}
+
+- (void)pinterestUserOAuth {
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    
+    NSURL *url = [NSURL URLWithString:@"https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://mywebsite.com/connect/pinterest/&client_id=4876889176752009285&scope=read_public,write_public&state=768uyFys"];
 }
 
 @end
